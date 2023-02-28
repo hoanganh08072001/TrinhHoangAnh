@@ -1,0 +1,496 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/MyLayout/_LayoutAdmin.cshtml";
+}
+@model List<Model.film>
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Danh sách phim</h1>
+        <div class="card mb-4">
+            @if (ViewBag.Msg != null)
+            {
+                if (ViewBag.Msg == "1")
+                {
+                    <div class="alert alert-danger">
+                        <strong>Dữ liệu đã tồn tại</strong>
+                    </div>
+                }
+                else if (ViewBag.Msg == "2")
+                {
+                    <div class="alert alert-info">
+                        <strong>Thành công</strong>
+                    </div>
+                }
+                else if (ViewBag.Msg == "3")
+                {
+                    <div class="alert alert-danger">
+                        <strong>Dữ liệu đang hoạt động ở lịch chiếu hoặc booking, không thể xóa</strong>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger">
+                        <strong>Dữ liệu không tồn tại</strong>
+                    </div>
+                }
+            }
+        <div class="card-header" style="display:flex;justify-content:space-between">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalAdd" style="width: 100px !important">
+                Thêm
+            </button>
+            <a href="/admin/filmtrash">
+                <button type="button" class="btn btn-secondary" >
+                    Thùng rác
+                </button>
+            </a>
+        </div>
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                        <tr style="background-color : darkgray">
+                            <th>STT</th>
+                            <th>Ảnh</th>
+                            <th>Phim</th>
+                            <th>Thể loại</th>
+                            
+                            <th>Trailer</th>
+                            <th >Hành động</th>
+
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>STT</th>
+                            <th>Ảnh</th>
+                            <th>Phim</th>
+                            <th>Thể loại</th>
+                      
+                            <th>Trailer</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <input type="hidden" value="@Model.Count()" id="dodai">
+                        @{var stt = 1; }
+                        @{string dtnoww = DateTime.Today.ToString("yyyy-MM-dd"); }
+                        @foreach (var item in Model)
+                        {
+                            string dateschedule = String.Format("{0:yyyy-MM-dd}", item.premiere_date);
+                            <tr>
+                                <td style="width: 40px !important">@stt</td>
+                                <td>
+                                    @{
+                                        var idModel = "exampleModalImg" + item.id;
+                                    }
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#@idModel">
+                                        <img style="width: 120px !important;height: 150px !important;" src="/Content/Assets/images/@item.image" class="img-fluid">
+                                    </a>
+
+                                </td>
+                                <td>@item.film_name</td>
+
+                                <td>
+                                    @{var category = new DatabaseIO.CategoryFilmDao().getAllCategoryFilm();
+                                    }
+                                    @foreach (var item1 in category)
+                                    {
+                                        if (item1.id == item.id_cfilm)
+                                        {
+                                            @item1.name;
+                                        }
+                                    }
+                                </td>
+
+
+                                <td>
+                                    @{
+                                        var idModelView = "exampleModalView" + item.id;
+                                    }
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#@idModelView">Link</a>
+                                </td>
+                                <td style="width: 330px !important">
+                                    @{
+                                        var idModelUp = "exampleModal" + item.id;
+                                    }
+                                    @{
+                                        var idModelDes = "exampleModalDes" + item.id;
+                                    }
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                            data-bs-target="#@idModelDes" style="width: 100px !important">
+                                        Chi tiết
+                                    </button>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#@idModelUp" style="width: 100px !important">
+                                        Sửa
+                                    </button>
+                                    @{
+                                        var idModelDel = "exampleModalDel" + item.id;
+                                    }
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                            data-bs-target="#@idModelDel" style="width: 100px !important">
+                                        Xóa
+                                    </button>
+                                    <div class="modal fade" id="@idModelDel" tabindex="-1"
+                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Bạn chắc chắn muốn xóa ?</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Phim @item.film_name
+                                                    <form action="/AdminFilm/Delete" method="post">
+                                                        <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                        <div class="modal-footer" style="margin-top: 20px">
+                                                            <button style="width:100px" type="button"  class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">
+                                                                Đóng
+                                                            </button>
+                                                            <button style="width:100px" type="submit" class="btn btn-danger">Xóa</button>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- Modal img-->
+                            <div class="modal fade" id="@idModel" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-m">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img style="width: 460px !important;height: 580px !important;" src="/Content/Assets/images/@item.image" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal img-->
+                            <div class="modal fade" id="@idModelView" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <iframe width="1104" height="621" src="@item.trailer"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal view-->
+                            <!-- Modal Descrip-->
+                            <div class="modal fade" id="@idModelDes" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">@item.film_name</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img style="width: 100% !important;height: 250px !important;" src="/Content/Assets/images/@item.image" class="img-fluid">
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="">
+                                                        <label for="category-film" class="col-form-label" style="font-weight:bold;width : 140px">Diễn viên</label>
+                                                        :@item.actor
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="category-film" class="col-form-label" style="font-weight:bold;width : 140px">Đạo diễn</label>
+                                                        :@item.director
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="category-film" class="col-form-label" style="font-weight:bold;width : 140px">Thời lượng</label>
+                                                        :@item.duration phút
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="category-film" class="col-form-label" style="font-weight:bold;width : 140px">Thể loại</label>
+                                                        : @foreach (var item1 in category)
+                                                        {
+                                                            if (item1.id == item.id_cfilm)
+                                                            {
+                                                                @item1.name;
+                                                            }
+                                                        }
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="category-film" class="col-form-label" style="font-weight:bold;width : 140px">Trailer</label>
+                                                        : @item.trailer
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="category-film" class="col-form-label" style="font-weight:bold;width : 140px">Ngày công chiếu</label>
+                                                        : @dateschedule
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;">Nội dung</label><br />
+                                                    @Html.Raw(item.description)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Descrup-->
+
+                            <!-- Modal Update-->
+                            <div class="modal fade" id="@idModelUp" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sửa</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form enctype="multipart/form-data" action="/AdminFilm/Update" method="post">
+                                                <input type="hidden" value="@item.id" name="id">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="">
+                                                            <label for="category-film" class="col-form-label">Tên Phim <span style="color:red">* </span>:</label>
+                                                            <input type="text" class="form-control" id="category-film" maxlength="30" name="tenphim" value="@item.film_name" required>
+                                                        </div>
+                                                        <div class="">
+                                                            <label for="category-film" class="col-form-label">Diễn viên <span style="color:red">* </span>:</label>
+                                                            <input type="text" class="form-control" id="category-film" maxlength="30" name="dienvien" value="@item.actor" required>
+                                                        </div>
+                                                        <div class="">
+                                                            <label for="category-film" class="col-form-label">Đạo diễn <span style="color:red">* </span>:</label>
+                                                            <input type="text" class="form-control" id="category-film" maxlength="20" name="daodien" value="@item.director" required>
+                                                        </div>
+                                                        <div class="">
+                                                            <label for="category-film" class="col-form-label">Thời lượng <span style="color:red">* </span>:</label>
+                                                            <input type="text" class="form-control" id="category-film"   name="thoiluong" value="@item.duration" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 ">
+                                                        <div class="">
+                                                            <label for="category-film" class="col-form-label">Thể loại <span style="color:red">* </span>:</label>
+                                                            <select class="form-select" aria-label="Default select example" name="theloai">
+                                                                @foreach (var item1 in category)
+                                                                {
+                                                                    if (item1.id == item.id_cfilm)
+                                                                    {
+                                                                        <option value="@item1.id" selected>@item1.name</option>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <option value="@item1.id">@item1.name</option>
+                                                                    }
+
+                                                                }
+                                                            </select>
+                                                        </div>
+                                                        <div class="mt-3">
+                                                            <label for="exampleFormControlFile1">Ảnh Thumbnail <span style="color:red">* </span>:</label>
+                                                            <input type="file" class="form-control-file"
+                                                                   name="file" id="exampleFormControlFile1">
+
+                                                            <input type="hidden" value="@item.image" name="anh">
+                                                        </div>
+                                                        <div class="mt-1">
+                                                            <label for="category-film" class="col-form-label">Trailer <span style="color:red">* </span>:</label>
+                                                            <input type="text" class="form-control" id="category-film" name="trailer" value="@item.trailer">
+                                                        </div>
+                                                        <div class="mt-1">
+                                                            <label for="category-film" class="col-form-label">Ngày công chiếu <span style="color:red">* </span>:</label>
+                                                            <input type="date" class="form-control" id="category-film" name="ngaycc" min="@dtnoww" value="@dateschedule" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @{
+                                                    var edit = "editor" + stt;
+                                                }
+                                                <div class="">
+                                                    <label for="category-film" class="col-form-label">Nội dung <span style="color:red">* </span>:</label>
+                                                    <textarea name="noidung" id="@edit" cols="30" rows="30">@Html.Raw(item.description)</textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button style="width:100px" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                                                    <button style="width:100px" type="submit" class="btn btn-primary">Lưu</button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Update-->
+                            stt++;
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</main>
+<!-- Modal Add-->
+<div class="modal fade" id="exampleModalAdd" tabindex="0" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form enctype="multipart/form-data" action="/AdminFilm/Add" method="post">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="category-film" class="col-form-label">Tên phim <span style="color:red">* </span>:</label>
+                                <input type="text" class="form-control" id="tenphim" name="tenphim" tabindex="1" autofocus required maxlength="20">
+                            </div>
+                            <div class="col-6">
+                                <label for="category-film" class="col-form-label">Diễn viên <span style="color:red">* </span>:</label>
+                                <input type="text" class="form-control" id="dienvien" name="dienvien" tabindex="2" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="category-film" class="col-form-label">Đạo diễn <span style="color:red">* </span>:</label>
+                                <input type="text" class="form-control" id="daodien" name="daodien" tabindex="3" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="category-film" class="col-form-label">Thời lượng <span style="color:red">* </span>:</label>
+                                <input type="number" class="form-control" id="thoiluong" name="thoiluong" tabindex="4" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="category-film" class="col-form-label">Ngày công chiếu <span style="color:red">* </span>:</label>
+                                <input type="date" class="form-control" id="ngaycc" name="ngaycc" min="@dtnoww" tabindex="5" required>
+                            </div>
+                            <div class="col-6 mt-2 ">
+                                <label for="exampleFormControlFile1">Ảnh thumbnail <span style="color:red">* </span>:</label>
+
+                                <input type="file" class="form-control-file mt-2" name="file" id="file" accept="image/*" tabindex="6" required>
+
+                            </div>
+                           
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="category-film" class="col-form-label">Trailer <span style="color:red">* </span>:</label>
+                                <input type="text" class="form-control" id="trailer" tabindex="7" name="trailer" required>
+                            </div>
+                            <div class="col-6">
+                                <label for="category-film" class="col-form-label">Thể loại <span style="color:red">* </span>:</label>
+                                <select class="form-select" aria-label="Default select example" id="theloai" tabindex="8" name="theloai" required>
+                                    <option value="" selected>Chọn thể loại</option>
+                                    @{var cate = new DatabaseIO.CategoryFilmDao().getAllCategoryFilm();
+                                    }
+                                    @foreach (var item1 in cate)
+                                    {
+                                        <option value="@item1.id">@item1.name</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="">
+                            <label for="category-film" class="col-form-label">Nội dung :</label>
+                            <textarea name="noidung" id="editor" cols="30" tabindex="8" rows="30"></textarea>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="modal-footer">
+                        <button style="width:100px" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button style="width:100px" type="submit" class="btn btn-primary" onclick="check()">Lưu </button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script>
+    function check() {
+        var tenphim = document.getElementById("tenphim").value;
+        var dienvien = document.getElementById("dienvien").value;
+        var daodien = document.getElementById("daodien").value;
+        var thoiluong = document.getElementById("thoiluong").value;
+        var theloai = document.getElementById("theloai").value;
+        var file = document.getElementById("file").value;
+        var trailer = document.getElementById("trailer").value;
+        var ngaycc = document.getElementById("ngaycc").value;
+        var editor = document.getElementById("editor").value;
+        if (tenphim == "") {
+            document.getElementById("tenphim").style.borderWidth = '1px';
+            document.getElementById("tenphim").style.borderColor = 'red';
+        } else if (dienvien == "") {
+            document.getElementById("dienvien").style.borderWidth = '1px';
+            document.getElementById("dienvien").style.borderColor = 'red';
+            document.getElementById("tenphim").style.borderWidth = '1px';
+            document.getElementById("tenphim").style.borderColor = '#D0C9C9';
+        } else if (daodien == "") {
+            document.getElementById("daodien").style.borderWidth = '1px';
+            document.getElementById("daodien").style.borderColor = 'red';
+            document.getElementById("dienvien").style.borderWidth = '1px';
+            document.getElementById("dienvien").style.borderColor = '#D0C9C9';
+        } else if (thoiluong == "") {
+            document.getElementById("thoiluong").style.borderWidth = '1px';
+            document.getElementById("thoiluong").style.borderColor = 'red';
+            document.getElementById("daodien").style.borderWidth = '1px';
+            document.getElementById("daodien").style.borderColor = '#D0C9C9';
+        } else if (ngaycc == "") {
+            document.getElementById("ngaycc").style.borderWidth = '1px';
+            document.getElementById("ngaycc").style.borderColor = 'red';
+            document.getElementById("thoiluong").style.borderWidth = '1px';
+            document.getElementById("thoiluong").style.borderColor = '#D0C9C9';
+        } else if (file == "") {
+            document.getElementById("file").style.borderWidth = '1px';
+            document.getElementById("file").style.borderColor = 'red';
+            document.getElementById("ngaycc").style.borderWidth = '1px';
+            document.getElementById("ngaycc").style.borderColor = '#D0C9C9';
+        }
+        else if (trailer == "") {
+            document.getElementById("trailer").style.borderWidth = '1px';
+            document.getElementById("trailer").style.borderColor = 'red';
+            document.getElementById("file").style.borderWidth = '1px';
+            document.getElementById("file").style.borderColor = '#D0C9C9';
+        }else if (theloai == "") {
+            document.getElementById("theloai").style.borderWidth = '1px';
+            document.getElementById("theloai").style.borderColor = 'red';
+            document.getElementById("trailer").style.borderWidth = '1px';
+            document.getElementById("trailer").style.borderColor = '#D0C9C9';
+        }  else if (editor == "") {
+            document.getElementById("editor").style.borderWidth = '1px';
+            document.getElementById("editor").style.borderColor = 'red';
+            document.getElementById("theloai").style.borderWidth = '1px';
+            document.getElementById("theloai").style.borderColor = '#D0C9C9';
+        }
+      
+    }
+
+   
+    CKEDITOR.replace("editor");
+   
+    document.getElementById("tenphim").focus();
+</script>
+<script>
+
+    var dodai = document.getElementById("dodai").value;
+
+    for (var i = 1; i < dodai; i++) {
+        var name = "editor" + i
+        CKEDITOR.replace(name);
+
+    }
+
+</script>
+<!-- Modal Add-->

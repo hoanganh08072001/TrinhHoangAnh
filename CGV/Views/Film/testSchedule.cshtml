@@ -1,0 +1,11 @@
+﻿@model List<Model.schedule>
+@{
+    ViewBag.Title = "testSchedule";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+}
+@foreach (var item in Model)
+{
+    <h2>@item.dateschedule</h2>
+
+}
+

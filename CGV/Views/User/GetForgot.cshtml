@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "GetForgot";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <link rel="shortcut icon" href="~/Content/Assets/images/fav icon.png" />
+    <link rel="stylesheet" href="~/Content/Assets/css/phim.css" />
+    <link rel="stylesheet" href="~/Content/Assets/css/form.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/Content/Assets/css/style.css">
+    <link rel="stylesheet" href="~/Content/Assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+}
+
+<section class="sign-in">
+    <div class="container">
+        <div class="signin-content" style="margin-top: 170px;">
+            <div class="signin-image">
+                <figure><img src="/Content/Assets/images/cv.jpg" alt="sing up image"></figure>
+                <p class="signup-image-link" style="color: #D42304;">Vui lòng vào email của bạn để lấy mã </p>
+                @* <p class="signup-image-link" style="color: #D42304;">Lưu ý :Thời gian hiệu lực của mã là 2 phút</p>*@
+            </div>
+            <div class="signin-form">
+
+                <h2 class="form-title" style="color: #D42304;font-size:25px">Nhập mã xác thực</h2>
+                <p class="form-title" style="margin-top:10px; color: #D42304;" id="dongho"></p>
+                <!--search------------->
+
+                <p class="form-title" style="margin-top:10px; color: forestgreen;" id="success"></p>
+
+                <form  class="register-form" id="register-form">
+
+                    <div class="form-group">
+                        <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                        <input type="text" name="code" id="code" placeholder="Mã code" />
+                        <input type="hidden" name="email" id="email" placeholder="Mã code" value="" />
+                    </div>
+                    <p style="color:red" id="resultError">@ViewBag.msg</p>
+                    <p style="color:forestgreen" id="resultSuccess"></p>
+
+                    <div class="form-group form-button">
+                        <input type="button" onclick="verify()" name="signin" id="signin" class="form-submit" value="Gửi" />
+                    </div>
+
+
+                </form>
+                @*  @using (Html.BeginForm("getCodeAgain", "Authentication", FormMethod.Post))
+                    {
+                        <input type="hidden" name="email" id="email1" placeholder="Code verify" value="@ViewBag.email" />
+                        <button style="text-decoration: none; background-color: none; border: none; color: #d42304;background:none;margin-top:20px " type="submit" id="laymatkhau">Cấp lại mã</button>
+                    }*@
+            </div>
+        </div>
+    </div>
+    <script>
+        function verify() {
+          
+            var code = $("#code").val();
+            if (code == '') {
+                $('#resultError').html("Cần điền mã verify");
+            } else {
+                $.ajax({
+                    url: '/User/VerifyForgot',
+                    type: "post",
+                    data: {                   
+                        code: code,
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        if (data.status == "OK") {
+                            $('#resultError').html("");
+                          
+                            $('#resultSuccess').html(data.msg);
+                            window.location.href = "https://localhost:44313/User/NewPassword";
+                        } else {
+                            document.getElementById("dongho").innerHTML=""
+                            $('#resultError').html(data.msg);
+                        }
+
+                    },
+                    error: function (error) {
+                        console.log(error);
+
+                    }
+                })
+            }
+        }
+    </script>
+</section>

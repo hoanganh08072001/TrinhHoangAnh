@@ -1,0 +1,84 @@
+D:\Source Code\CGV\Model\bin\Debug\Model.dll.config
+D:\Source Code\CGV\Model\bin\Debug\Model.dll
+D:\Source Code\CGV\Model\bin\Debug\Model.pdb
+D:\Source Code\CGV\Model\bin\Debug\EntityFramework.dll
+D:\Source Code\CGV\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Source Code\CGV\Model\bin\Debug\EntityFramework.xml
+D:\Source Code\CGV\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Source Code\CGV\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Source Code\CGV\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Source Code\CGV\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Source Code\CGV\Model\obj\Debug\Model.dll
+D:\Source Code\CGV\Model\obj\Debug\Model.pdb
+D:\dđ\cgvAspMVC\Model\bin\Debug\Model.dll.config
+D:\dđ\cgvAspMVC\Model\bin\Debug\Model.dll
+D:\dđ\cgvAspMVC\Model\bin\Debug\Model.pdb
+D:\dđ\cgvAspMVC\Model\bin\Debug\EntityFramework.dll
+D:\dđ\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\dđ\cgvAspMVC\Model\bin\Debug\EntityFramework.xml
+D:\dđ\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\dđ\cgvAspMVC\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\dđ\cgvAspMVC\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\dđ\cgvAspMVC\Model\obj\Debug\Model.csproj.CopyComplete
+D:\dđ\cgvAspMVC\Model\obj\Debug\Model.dll
+D:\dđ\cgvAspMVC\Model\obj\Debug\Model.pdb
+D:\.NET MVC\Github\cgvAspMVC\Model\bin\Debug\Model.dll.config
+D:\.NET MVC\Github\cgvAspMVC\Model\bin\Debug\Model.dll
+D:\.NET MVC\Github\cgvAspMVC\Model\bin\Debug\Model.pdb
+D:\.NET MVC\Github\cgvAspMVC\Model\bin\Debug\EntityFramework.dll
+D:\.NET MVC\Github\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NET MVC\Github\cgvAspMVC\Model\bin\Debug\EntityFramework.xml
+D:\.NET MVC\Github\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NET MVC\Github\cgvAspMVC\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\.NET MVC\Github\cgvAspMVC\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\.NET MVC\Github\cgvAspMVC\Model\obj\Debug\Model.csproj.CopyComplete
+D:\.NET MVC\Github\cgvAspMVC\Model\obj\Debug\Model.dll
+D:\.NET MVC\Github\cgvAspMVC\Model\obj\Debug\Model.pdb
+D:\dđ\New\cgvAspMVC\Model\bin\Debug\Model.dll.config
+D:\dđ\New\cgvAspMVC\Model\bin\Debug\Model.dll
+D:\dđ\New\cgvAspMVC\Model\bin\Debug\Model.pdb
+D:\dđ\New\cgvAspMVC\Model\bin\Debug\EntityFramework.dll
+D:\dđ\New\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\dđ\New\cgvAspMVC\Model\bin\Debug\EntityFramework.xml
+D:\dđ\New\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\dđ\New\cgvAspMVC\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\dđ\New\cgvAspMVC\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\dđ\New\cgvAspMVC\Model\obj\Debug\Model.csproj.CopyComplete
+D:\dđ\New\cgvAspMVC\Model\obj\Debug\Model.dll
+D:\dđ\New\cgvAspMVC\Model\obj\Debug\Model.pdb
+D:\dđ\Final\cgvAspMVC\Model\bin\Debug\Model.dll.config
+D:\dđ\Final\cgvAspMVC\Model\bin\Debug\Model.dll
+D:\dđ\Final\cgvAspMVC\Model\bin\Debug\Model.pdb
+D:\dđ\Final\cgvAspMVC\Model\bin\Debug\EntityFramework.dll
+D:\dđ\Final\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\dđ\Final\cgvAspMVC\Model\bin\Debug\EntityFramework.xml
+D:\dđ\Final\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\dđ\Final\cgvAspMVC\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\dđ\Final\cgvAspMVC\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\dđ\Final\cgvAspMVC\Model\obj\Debug\Model.csproj.CopyComplete
+D:\dđ\Final\cgvAspMVC\Model\obj\Debug\Model.dll
+D:\dđ\Final\cgvAspMVC\Model\obj\Debug\Model.pdb
+D:\.NET MVC\FPT\cgvAspMVC\Model\bin\Debug\Model.dll.config
+D:\.NET MVC\FPT\cgvAspMVC\Model\bin\Debug\Model.dll
+D:\.NET MVC\FPT\cgvAspMVC\Model\bin\Debug\Model.pdb
+D:\.NET MVC\FPT\cgvAspMVC\Model\bin\Debug\EntityFramework.dll
+D:\.NET MVC\FPT\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NET MVC\FPT\cgvAspMVC\Model\bin\Debug\EntityFramework.xml
+D:\.NET MVC\FPT\cgvAspMVC\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NET MVC\FPT\cgvAspMVC\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\.NET MVC\FPT\cgvAspMVC\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\.NET MVC\FPT\cgvAspMVC\Model\obj\Debug\Model.csproj.CopyComplete
+D:\.NET MVC\FPT\cgvAspMVC\Model\obj\Debug\Model.dll
+D:\.NET MVC\FPT\cgvAspMVC\Model\obj\Debug\Model.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\bin\Debug\Model.dll.config
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\bin\Debug\Model.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\bin\Debug\Model.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\obj\Debug\Model.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\Model\obj\Debug\Model.pdb

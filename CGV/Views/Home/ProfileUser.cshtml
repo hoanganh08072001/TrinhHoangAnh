@@ -1,0 +1,214 @@
+﻿@model Model.usercgv
+@{
+    ViewBag.Title = "ProfileUser";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Assets/Event/table.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/Content/Assets/css/phim.css" />
+    <link rel="stylesheet" href="~/Content/Assets/css/lightslider.css" />
+    <script src="~/Content/Assets/js/JQuery3.3.1.js"></script>
+    <script src="~/Content/Assets/js/lightslider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+}
+@{
+    var userInfomatiom = (Model.usercgv)Session[CGV.Constants.Constants.USER_SESSION];
+}
+<div>
+    <p class="head3" style="font-size:40px"></p>
+    <div class="row container" style="border: 1px solid #d42304;margin: 0 auto;padding: 10px 0">
+        <div class="col-4">
+            <img class="image3" style="height : 250px !important" src="https://res.cloudinary.com/bitcharge/image/upload/v1535940305/panda-avatar.png" alt="" />
+        </div>
+        <div class="col-6">
+            <p id="textUsername"><span style="font-weight:bold">Tên người dùng: </span>@Model.username</p><br>
+            <p id="textEmail"><span style="font-weight:bold">Email : </span>@Model.email</p><br>
+
+            <p id="textPhonenumber"><span style="font-weight:bold">Số điện thoại: </span> @Model.phonenumber</p><br>
+
+            <div class="button--movie">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        style="margin-right: 20px">
+                   Sửa thông tin cá nhân
+                </button>
+                <input type="hidden" class="form-control" name="idFilmT" id="idFilmT" value="@Model.id" placeholder="Mật khẩu">
+                <button  type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModa" data-bs-whatever="mdo">Đổi mật khẩu</button>
+
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Sửa thông tin</h5>
+                           
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="schedule" class="col-form-label">Username:</label>
+                                    <input type="text" class="form-control" value="@Model.username" name="username" id="username" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="showtime" class="col-form-label">Phonenumber:</label>
+                                    <input type="text" class="form-control" name="phonenumber"  id="phonenumberedit" value="@Model.phonenumber" pattern="[0-9]{3}[0-9]{4}[0-9]{3}"
+                                           placeholder="Số điện thoại" />
+                                 
+                                </div>
+                                <div class="mb-3">
+                                    <label for="room" class="col-form-label">Email:</label>
+                                    <input type="text" readonly class="form-control" value="@Model.email" name="email" id="email" />
+                                </div>
+
+                                <p style="color: red" id="resultError1"></p>
+                                <p style="color: forestgreen" id="resultSuccess1"></p>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" onclick="clearData()" data-bs-dismiss="modal">Đóng</button>
+                            <button onclick="editProfile()" type="button" class="btn btn-danger">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function clearData() {
+                    $('#resultError').html("");
+                    $('#resultSuccess').html("");
+                    $('#resultError1').html("");
+                    $('#resultSuccess1').html("");
+                }
+            </script>
+            <!--  Modak Booking -->
+            <div class="modal fade" id="exampleModa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Đổi mật khẩu</h5>
+                            
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="schedule" class="col-form-label">Mật khẩu cũ:</label>
+                                    <input type="password" class="form-control" name="password" id="password" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="showtime" class="col-form-label">Mật khẩu mới :</label>
+                                    <input type="password" class="form-control" name="passwordnew" id="passwordnew" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="room" class="col-form-label">Nhập lại mật khẩu mới:</label>
+                                    <input type="password" class="form-control" name="rePasswordnew" id="rePasswordnew" />
+                                </div>
+                                <input type="hidden" value="@userInfomatiom.email" id="emailEdit" />
+                                <p style="color: red" id="resultError"></p>
+                                <p style="color: forestgreen" id="resultSuccess"></p>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" onclick="clearData()" data-bs-dismiss="modal">Đóng</button>
+                            <button onclick="changePass()" type="button" class="btn btn-danger">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModaltest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hóa đơn</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="result" class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="closeModel()" type="button" class="btn btn-danger">OK</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script>
+       
+    </script>
+    <script>
+        function changePass() {
+            var passwordOld = $('#password').val();
+            var passwordNew = $('#passwordnew').val();
+            var rePasswordNew = $('#rePasswordnew').val();
+            var email = $('#emailEdit').val();
+            if (passwordOld == '' || passwordNew == '' || rePasswordNew == '') {
+                $('#resultError').html("Cần điền đây đủ thông tin");
+                $('#resultSuccess').html("");
+            } else if (passwordNew != rePasswordNew) {
+                $('#resultError').html("Hai mật khẩu không trùng khớp ");
+                $('#resultSuccess').html("");
+            } else {
+                $.ajax({
+                        url: '/User/EditPassword',
+                        type: "post",
+                        data: {
+                            passwordOld: passwordOld,
+                            passwordNew: passwordNew,
+                            rePasswordNew: rePasswordNew,
+                            email: email
+                        },
+                        success: function (data) {
+                            console.log(data);
+                            $('#resultSuccess').html(data.Data.message);
+                            $('#resultError').html("");
+                        },
+                        error: function (error) {
+                            $('#resultError').html(data.Data.message);
+                            $('#resultSuccess').html("");
+                        }
+                })
+            }
+            
+        }
+    </script>
+    <script>
+        function editProfile() {
+            var username = $("#username").val();
+           
+            var phonenumber = $("#phonenumberedit").val();
+            var email = $('#emailEdit').val();
+            if (username == "" || phonenumber == "" || email == "") {
+              
+                $('#resultError1').html("Cần điền đây đủ thông tin");
+                $('#resultSuccess1').html("");
+            } else {
+                $.ajax({
+                    url: '/User/updateProfile',
+                    type: "post",
+                    data: {
+                        username: username,
+                        phonenumber: phonenumber,
+                        email: email
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        if (data.Data.status = "OK") {
+                            $('#resultError1').html("");
+                            $('#resultSuccess1').html(data.Data.message);
+                            $("#textUsername").html(`<span style="font-weight: bold">Username : </span>` + username);
+                            $("#textPhonenumber").html(`<span style="font-weight: bold">Username : </span>` + phonenumber);
+                        } else {
+                            $('#resultError1').html(data.Data.message);
+                        }
+                     
+                    },
+                    error: function (error) {
+                        console.log(error);
+                        $('#resultError1').html(data.Data.message);
+                    }
+                })
+            }
+        }
+    </script>
+</div>

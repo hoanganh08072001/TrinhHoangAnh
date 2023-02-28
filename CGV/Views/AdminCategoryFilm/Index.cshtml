@@ -1,0 +1,208 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/MyLayout/_LayoutAdmin.cshtml";
+}
+
+@model List<Model.category_film>
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Thể loại phim</h1>
+        @if (ViewBag.Msg != null)
+        {
+            if (ViewBag.Msg == "1")
+            {
+                <div class="alert alert-danger">
+                    <strong>Dữ liệu đã tồn tại</strong>
+                </div>
+            }
+            else if (ViewBag.Msg == "2")
+            {
+                <div class="alert alert-info">
+                    <strong>Thành công</strong>
+                </div>
+            }
+            else if (ViewBag.Msg == "3")
+            {
+                <div class="alert alert-danger">
+                    <strong>Dữ liệu đang hoạt động ở thông tin phim, không thể xóa</strong>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-danger">
+                    <strong>Dữ liệu không tồn tại</strong>
+                </div>
+            }
+        }
+
+        <div class="card mb-4">
+
+            <div class="card-header">
+
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalAdd" style="width: 100px !important">
+                    Thêm
+                </button>
+            </div>
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                        <tr style="background-color : darkgray">
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>Hoạt động</th>
+
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>Hoạt động</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @{var stt = 1; }
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td style="width: 40px !important">@stt</td>
+                                <td>@item.name</td>
+                                <td>
+                                    @{
+                                        var idModel = "exampleModal" + item.id;
+                                    }
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#@idModel" style="width: 100px !important">
+                                        Sửa
+                                    </button>
+                                    @{
+                                        var idModelDel = "exampleModalDel" + item.id;
+                                    }
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                            data-bs-target="#@idModelDel" style="width: 100px !important">
+                                        Xóa
+                                    </button>
+
+                                    <div class="modal fade" id="@idModelDel" tabindex="-1"
+                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Bạn chắc chắn muốn xóa ?</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Thể loại phim : @item.name
+                                                    <form action="/AdminCategoryFilm/Delete" method="post">
+                                                        <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                        <div class="modal-footer" style="margin-top:20px">
+                                                            <button style="width:100px" type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">
+                                                                Đóng
+                                                            </button>
+                                                            <button style="width:100px" type="submit" class="btn btn-danger">Xóa</button>
+
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- Modal Update-->
+                            <div class="modal fade" id="@idModel" 
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sửa</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST" action="/AdminCategoryFilm/Update" class="register-form" id="register-form">
+                                                <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                <div class="mb-3">
+                                                    <label for="category-film"
+                                                           class="col-form-label">Tên <span style="color:red">* </span>:</label>
+                                                    <input type="text" class="form-control" maxlength="30" id="category-film" name="categoryfilm" value="@item.name" required>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button style="width:100px" type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                        Đóng
+                                                    </button>
+                                                    <button style="width:100px" type="submit" class="btn btn-primary">Lưu</button>
+
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Update-->
+                            stt++;
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- Modal Add-->
+<div class="modal fade" id="exampleModalAdd" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="/AdminCategoryFilm/Add" class="register-form" id="register-form">
+                    <div class="mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Tên <span style="color:red">* </span>:</label>
+                        <input type="text" class="form-control" id="categoryFilm" maxlength="30" name="categoryfilm" required>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button  style="width:100px" type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Đóng
+                        </button>
+                        <button style="width:100px" onclick="check()" type="submit" class="btn btn-primary">Lưu</button>
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<script>
+    function check() {
+        var valueCheck = document.getElementById("categoryFilm").value;
+        if (valueCheck == "") {
+            document.getElementById("categoryFilm").style.borderWidth = '1px';
+            document.getElementById("categoryFilm").style.borderColor = 'red';
+        } else {
+            document.getElementById("categoryFilm").style.borderWidth = '1px';
+            document.getElementById("categoryFilm").style.borderColor = '#D0C9C9';
+        }
+    }
+    document.getElementById("category-film").focus();
+    document.getElementById("category-film").select();
+</script>
+<!-- Modal Update-->

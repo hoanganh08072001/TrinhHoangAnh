@@ -1,0 +1,396 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/MyLayout/_LayoutAdmin.cshtml";
+}
+@model List<Model.schedule>
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Lịch chiếu</h1>
+       
+        <div class="card mb-4">
+            <div class="card-header">
+                @if (ViewBag.Msg != null)
+                {
+                    if (ViewBag.Msg == "1")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu đã tồn tại</strong>
+                        </div>
+                    }
+                    else if (ViewBag.Msg == "2")
+                    {
+                        <div class="alert alert-info">
+                            <strong>Thành công</strong>
+                        </div>
+                    }
+                    else if (ViewBag.Msg == "3")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu đang hoạt động trong suất chiếu hoặc booking và có ràng buộc với suất chiếu, không thể xóa</strong>
+                        </div>
+                    }
+                    else if (ViewBag.Msg == "4")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Phòng này đã có dữ liệu trong suất chiếu hoặc booking, không được sửa</strong>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu không tồn tại</strong>
+                        </div>
+                    }
+                }
+                <button style="width:100px" type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalAdd">
+                    Thêm
+                </button>
+            </div>
+            <div class="card-body">
+                <table id="datatablesSimple" >
+                    <thead>
+                        <tr style="background-color : darkgray" class="center-block">
+                            <th>STT</th>
+                            <th>Phim</th>
+                            <th>Ngày chiếu</th>
+                            <th>Phòng</th>
+                            <th>Hoạt động</th>
+
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr style="background-color : darkgray" class="center-block">
+                            <th>STT</th>
+                            <th>Phim</th>
+                            <th>Ngày chiếu</th>
+                            <th>Phòng</th>
+                            <th>Hoạt động</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @{var film = new DatabaseIO.FilmDao().getAll();
+                        }
+                        @{string dtnow = DateTime.Today.ToString("yyyyMMdd"); }
+                        @{string dtnoww = DateTime.Today.ToString("yyyy-MM-dd"); }
+                        @{ int todayd = Int32.Parse(dtnow);}
+                        @{var stt = 1; }
+                        @foreach (var item in Model)
+                        {
+                            string dateschedule = String.Format("{0:yyyy-MM-dd}", item.dateschedule);
+                            string dateint = String.Format("{0:yyyyMMdd}", item.dateschedule);
+                            int datesche = Int32.Parse(dateint);
+                            var roomN = new DatabaseIO.ScheduleDao().getNameRoom(item.id);
+                        <tr>
+                            <td>@stt</td>
+                            <td>
+
+                                @foreach (var item1 in film)
+                                {
+                                    if (item1.id == item.film_id)
+                                    {
+                                        @item1.film_name;
+                                    }
+                                }
+                            </td>
+                            <td>@dateschedule</td>
+                            @if (roomN != null)
+                            {
+                                <td>@roomN.room_name</td>
+                            }
+                            else
+                            {
+                                <td></td>
+                            }
+
+                        <td>
+                            @if (datesche < todayd)
+                            {
+                            }
+                            else
+                            {
+                                var idModelS = "exampleModalAddS" + item.id;
+
+
+                                <!-- Modal AddShow-->
+                                <div class="modal fade" id="@idModelS" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Thêm</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form method="POST" action="/AdminShowtime/Add" class="register-form" id="register-form">
+                                                    <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                    <div class="mb-3">
+                                                        <div class="mb-3">
+                                                            <label for="category-film" class="col-form-label">
+                                                                Ngày
+                                                                chiếu <span style="color:red">* </span>:
+                                                            </label>
+                                                            <input type="text" class="form-control"
+                                                                   id="category-film" value="@dateschedule" disabled>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="category-film" class="col-form-label">
+                                                                Bắt
+                                                                đầu <span style="color:red">* </span>:
+                                                            </label>
+                                                            <input type="time" class="form-control"
+                                                                   id="category-film" name="start" required>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="category-film" class="col-form-label">
+                                                                Kết
+                                                                thúc <span style="color:red">* </span>:
+                                                            </label>
+                                                            <input type="time" class="form-control"
+                                                                   id="category-film" name="end" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button style="width:100px" type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">
+                                                            Đóng
+                                                        </button>
+                                                        <button style="width:100px" type="submit" class="btn btn-primary">Lưu </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal Show-->
+                            }
+
+                            @{
+                                var idModel = "exampleModal" + item.id;
+                            }
+                            @{
+                                var idModelDel = "exampleModalDel" + item.id;
+                            }
+                            <button style="width:100px" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#@idModel">
+                                Sửa
+                            </button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#@idModelDel" style="width:100px" class="btn btn-danger"> Xóa</button>
+                            <div class="modal fade" id="@idModelDel" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Bạn chắc chắn muốn xóa ?</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            Phim : @item.film.film_name <br />
+                                            Ngày : @dateschedule
+                                        <form action="/AdminSchedule/Delete" method="post">
+                                            @if (roomN != null)
+                                            {
+                                                <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                <input type="hidden" class="form-control" id="idR" name="idRoom" value="@roomN.id">
+
+                                            }
+
+                                            <div class="modal-footer" style="margin-top: 20px">
+                                                <button style="width:100px" type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">
+                                                    Đóng
+                                                </button>
+                                                <button style="width:100px" type="submit" class="btn btn-danger"> Xóa</button>
+
+                                            </div>
+
+                                        </form>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </td>
+
+                        </tr>
+
+
+                            <!-- Modal Update-->
+                            <div class="modal fade" id="@idModel" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sửa</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST" action="/AdminSchedule/Update" class="register-form" id="register-form">
+                                                <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                <div class="mb-3">
+                                                    <label for="category-film"
+                                                           class="col-form-label">Phim <span style="color:red">* </span>:</label>
+                                                    <select class="form-select"
+                                                            aria-label="Default select example" name="filmid" required>
+
+                                                        @foreach (var item1 in film)
+                                                        {
+                                                            if (item1.id == item.film_id)
+                                                            {
+                                                                <option value="@item1.id" selected>@item1.film_name</option>
+                                                            }
+                                                            else
+                                                            {
+                                                                <option value="@item1.id">@item1.film_name</option>
+                                                            }
+
+                                                        }
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="category-film" class="col-form-label">
+                                                        Ngày
+                                                        chiếu <span style="color:red">* </span>:
+                                                    </label>
+                                                    <input type="date" class="form-control"  name="dateschedule" min="@dtnoww" value="@dateschedule" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="category-film" class="col-form-label">
+                                                        Phòng <span style="color:red">* </span>:
+                                                    </label>
+                                                    @{
+                                                        var listRoom1 = new DatabaseIO.RoomDao().getAll();
+                                                        var nameR = new DatabaseIO.ScheduleDao().getNameRoom(item.id);
+                                                    }
+                                                    <select required class="form-select"  name="idroom" aria-label="Default select example">
+                                                        @if (nameR != null)
+                                                        {
+                                                            <option value="@nameR.id">@nameR.room_name</option>
+                                                        }
+
+                                                        @foreach (var r in listRoom1)
+                                                        {
+                                                            <option value="@r.id">@r.room_name</option>
+                                                        }
+
+                                                    </select>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button style="width:100px" type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                       Đóng
+                                                    </button>
+                                                    <button style="width:100px" type="submit" class="btn btn-primary">Lưu</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Update-->
+                            stt++;
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Modal Add-->
+<div class="modal fade" id="exampleModalAdd" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="/AdminSchedule/Add" class="register-form" id="register-form">
+                    <div class="mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Phim <span style="color:red">* </span>:</label>
+                        <select class="form-select"
+                                aria-label="Default select example" id="filmId" name="filmid" required>
+
+                            <option selected value="">Open this select menu</option>
+
+                            @foreach (var item1 in film)
+                            {
+                                <option value="@item1.id">@item1.film_name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="category-film" class="col-form-label">
+                            Phòng <span style="color:red">* </span>:
+                        </label>
+                        @{
+                            var listRoom = new DatabaseIO.RoomDao().getAll();
+                        }
+                        <select required class="form-select" id="idroom" name="idroom" aria-label="Default select example">
+                            <option value="" selected>Chọn phòng</option>
+                            @foreach (var r in listRoom)
+                            {
+                                <option value="@r.id">@r.room_name</option>
+                            }
+
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category-film" class="col-form-label">
+                            Ngày
+                            chiếu <span style="color:red">* </span>:
+                        </label>
+                        <input type="date" class="form-control" id="dateSchedule" name="dateschedule" min="@dtnoww" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button style="width:100px" type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Đóng
+                        </button>
+                        <button onclick="check()" style="width:100px" type="submit" class="btn btn-primary">Lưu </button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <script>
+            function check() {
+                var valueFilm = document.getElementById("filmId").value;
+                var valuaDate = document.getElementById("dateSchedule").value;
+                var valueSchedule = document.getElementById("idroom").value; idroom
+                
+                if (valueFilm == "") {
+                    document.getElementById("filmId").style.borderWidth = '1px';
+                    document.getElementById("filmId").style.borderColor = 'red';
+                } else if (valueSchedule == "") {
+                    document.getElementById("idroom").style.borderWidth = '1px';
+                    document.getElementById("idroom").style.borderColor = 'red';
+                    document.getElementById("filmId").style.borderWidth = '1px';
+                    document.getElementById("filmId").style.borderColor = '#D0C9C9';
+                } else if ( valuaDate == "") {
+                    document.getElementById("dateSchedule").style.borderWidth = '1px';
+                    document.getElementById("dateSchedule").style.borderColor = 'red';
+                    document.getElementById("idroom").style.borderWidth = '1px';
+                    document.getElementById("idroom").style.borderColor = '#D0C9C9';
+                } else {
+                    document.getElementById("filmId").style.borderWidth = '1px';
+                    document.getElementById("filmId").style.borderColor = '#D0C9C9';
+                }
+
+            }
+        </script>
+    </div>
+</div>
+<!-- Modal Update-->

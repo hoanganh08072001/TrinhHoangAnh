@@ -1,0 +1,119 @@
+﻿@model List<Model.film>
+@{
+    ViewBag.Title = "FilmComingSoon";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+}
+
+
+<div class="movies-heading">
+    <h2>Phim Sắp Chiếu</h2>
+
+</div>
+<section id="movies-list">
+    @foreach (var item in Model)
+    {
+        <div class="movies-box">
+            <!--img------------>
+            <a href="/film/detail/@item.id">
+                <div class="movies-img">
+                    <div class="quality">4K</div>
+                    <img src="/Content/Assets/images/@item.image" />
+                </div>
+            </a>
+            <div style="height : 70px;margin-top : -30px !important">
+                <a href="/film/detail/@item.id"> @item.film_name </a>
+            </div>
+            <!--text--------->
+            <!-- Button trigger modal -->
+            <div style="margin-bottom:20px" class="button--movie">
+                @{
+                    var idModel = "exampleModal" + item.id;
+                    var idModa = "exampleModa" + item.id;
+
+                }
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@idModel"
+                        style="margin-right: 20px">
+                    Trailer
+                </button>
+                <button type="button" onclick="getSchedule(@item.id)" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@idModa">Đặt Vé</button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="@idModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <iframe width="1104" height="621" src="@item.trailer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</section>
+<script>
+    $(document).ready(function () {
+        $("#autoWidth,#autoWidth2").lightSlider({
+            autoWidth: true,
+            loop: true,
+            onSliderLoad: function () {
+                $("#autoWidth,#autoWidth2").removeClass("cS-hidden");
+            },
+        });
+    });
+</script>
+<!--btns--------------->
+<!-- <div class="btns">
+  <a href="#">Previous</a>
+  <a href="#">Next</a>
+</div> -->
+<!--stopplaying--------------->
+<script>
+    $("#exampleModal1").on("hidden.bs.modal", function (e) {
+        $("#exampleModal1 iframe").attr(
+            "src",
+            $("#exampleModal1 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal2").on("hidden.bs.modal", function (e) {
+        $("#exampleModal2 iframe").attr(
+            "src",
+            $("#exampleModal2 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal3").on("hidden.bs.modal", function (e) {
+        $("#exampleModal3 iframe").attr(
+            "src",
+            $("#exampleModal3 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal4").on("hidden.bs.modal", function (e) {
+        $("#exampleModal4 iframe").attr(
+            "src",
+            $("#exampleModal4 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    function test() {
+        $.ajax({
+            url: '/Film/getTest',
+            type: "post",
+
+            success: function (data) {
+                console.log(data);
+
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        })
+    }
+</script>
+

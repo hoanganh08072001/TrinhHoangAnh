@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "paymentAtCine";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+    <script src="https://js.stripe.com/v3/"></script>
+}
+
+<div style="margin-top:100px">
+
+    <input type="hidden" id="link" value="@ViewBag.link" />
+    <div style="display:flex; flex-direction:column ;width:500px;margin:0 auto;align-content:center;justify-items:center;justify-content:center;align-items:center">
+        <h1 style="color:forestgreen;margin-bottom:10px">Đặt vé  thành công!!!</h1>
+        <div style="z-index:2000;margin-bottom:10px" id="id_qrcode"></div>
+        <p style="color:red">Bạn có thể lấy mã QR ở đây , hoặc check mail để nhận </p>
+        <button class="btn btn-danger" onclick="onReady()" type="button" id="btnqr">Lấy QR</button>
+    </div>
+
+
+</div>
+<script type="text/javascript">
+    function onReady() {
+        var text = $('#link').val();
+        document.getElementById("btnqr").disabled = true;
+        var qrcode = new QRCode("id_qrcode", {
+            text: text,
+            width: 150,
+            height: 150,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    }
+</script>
+
+

@@ -1,0 +1,28 @@
+﻿@model List<Model.post>
+<h1 class="showcase-heading">KHUYẾN MÃI</h1>
+<!--slider------------------->
+<ul id="autoWidth2" class="cs-hidden">
+    <!--slide-box-1------------------>
+    @foreach(var item in Model)
+    {
+    <li class="item-a">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <a href="/post/detailpromotion/@item.id">
+                    <img src="/Content/Assets/images/@item.image" />
+                </a>
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong><i class="fab fa-hotjar"></i></strong>
+                <p>Ưu đãi Hot</p>
+            </div>
+        </div>
+    </li>
+    }
+    
+</ul>
+<div>
+    <span class="red">@Html.ValidationSummary(false)</span>
+</div>

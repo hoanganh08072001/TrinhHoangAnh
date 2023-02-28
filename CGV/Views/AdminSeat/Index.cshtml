@@ -1,0 +1,197 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/MyLayout/_LayoutAdmin.cshtml";
+}
+@model List<Model.seat>
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Ghế ngồi </h1>
+       
+
+        <div class="card mb-4">
+            <div class="card-header">
+                @if (ViewBag.Msg != null)
+                {
+                    if (ViewBag.Msg == "1")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu đã tồn tại</strong>
+                        </div>
+                    }
+                    else if (ViewBag.Msg == "2")
+                    {
+                        <div class="alert alert-info">
+                            <strong>Thành công</strong>
+                        </div>
+                    }
+                    else if (ViewBag.Msg == "3")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu có ràng buộc với phòng , không thể xóa</strong>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu không tồn tại</strong>
+                        </div>
+                    }
+                }
+                <button type="button" style="width:100px" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalAdd">
+                    Thêm
+                </button>
+            </div>
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                        <tr style="background-color : darkgray">
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>Hoạt động</th>
+
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr style="background-color : darkgray">
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>Hoạt động</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @{var stt = 1; }
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@stt</td>
+                                <td>@item.seat_name</td>
+                                <td>
+                                    @{
+                                        var idModel = "exampleModal" + item.id;
+                                    }
+                                    @{
+                                        var idModelDel = "exampleModalDel" + item.id;
+                                    }
+                                    <button type="button" style="width:100px" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#@idModel">
+                                        Sửa
+                                    </button>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#@idModelDel" style="width:100px" class="btn btn-danger"> Xóa</button>
+                                    <div class="modal fade" id="@idModelDel" tabindex="-1"
+                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Bạn chắc chắn muốn xóa ?</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    Ghế : @item.seat_name
+                                                    <form action="/AdminSeat/Delete" method="post">
+                                                        <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                        <div class="modal-footer" style="margin-top: 20px">
+                                                            <button style="width:100px" type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">
+                                                                Đóng
+                                                            </button>
+                                                            <button style="width:100px" type="submit" class="btn btn-danger"> Xóa</button>
+
+                                                        </div>
+
+                                                    </form>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </td>
+
+                            </tr>
+
+                            <!-- Modal Update-->
+                            <div class="modal fade" id="@idModel" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sửa</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST" action="/AdminSeat/Update" class="register-form" id="register-form">
+                                                <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                <div class="mb-3">
+                                                    <label for="category-film"
+                                                           class="col-form-label">Tên <span style="color:red">* </span>:</label>
+                                                    <input type="text" class="form-control" id="category-film" name="seatname" value="@item.seat_name" required>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button style="width:100px" type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                        Đóng
+                                                    </button>
+                                                    <button style="width:100px" type="submit" class="btn btn-primary">Lưu</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Update-->
+                                            stt++;
+                                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="modal fade" id="exampleModalAdd" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="/AdminSeat/Add" class="register-form" id="register-form">
+                    <div class="mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Tên <span style="color:red">* </span>:</label>
+                        <input type="text" class="form-control" maxlength="10" id="seatname" name="seatname" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button style="width:100px" type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Đóng
+                        </button>
+                        <button style="width:100px" onclick="check()" type="submit" class="btn btn-primary">Lưu </button>
+                    </div>
+                </form>
+            </div>
+            <script>
+                function check() {
+                    var seatname = document.getElementById("seatname").value;
+                    if (seatname == "") {
+                        document.getElementById("seatname").style.borderWidth = '1px';
+                        document.getElementById("seatname").style.borderColor = 'red';
+                    } else {
+                        document.getElementById("seatname").style.borderWidth = '1px';
+                        document.getElementById("seatname").style.borderColor = '#D0C9C9';
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</div>
+

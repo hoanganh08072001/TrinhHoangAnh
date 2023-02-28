@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "IndexUser";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+}
+
+<!--movies---------------------------->
+<div class="movies-heading">
+    <h2>Phim Đang Chiếu</h2>
+    <a href="/Film/FilmNowShowing" class="btn btn-warning">Xem tất cả</a>
+</div>
+<section id="movies-list">
+    <!--box-1------------------------>
+    @Html.Action("FilmNowShowing", "Home");
+</section>
+
+
+<!--latest-movies---------------------->
+<section id="latest">
+    @Html.Action("FilmPromotion", "Home")
+</section>
+<div class="movies-heading">
+    <h2>Phim Sắp Chiếu</h2>
+
+</div>
+<section id="movies-list">
+    @Html.Action("FilmComingSoon", "Home");
+</section>
+<script>
+    $(document).ready(function () {
+        $("#autoWidth,#autoWidth2").lightSlider({
+            autoWidth: true,
+            loop: true,
+            onSliderLoad: function () {
+                $("#autoWidth,#autoWidth2").removeClass("cS-hidden");
+            },
+        });
+    });
+</script>
+<!--btns--------------->
+<!-- <div class="btns">
+  <a href="#">Previous</a>
+  <a href="#">Next</a>
+</div> -->
+<!--stopplaying--------------->
+<script>
+    $("#exampleModal1").on("hidden.bs.modal", function (e) {
+        $("#exampleModal1 iframe").attr(
+            "src",
+            $("#exampleModal1 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal2").on("hidden.bs.modal", function (e) {
+        $("#exampleModal2 iframe").attr(
+            "src",
+            $("#exampleModal2 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal3").on("hidden.bs.modal", function (e) {
+        $("#exampleModal3 iframe").attr(
+            "src",
+            $("#exampleModal3 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal4").on("hidden.bs.modal", function (e) {
+        $("#exampleModal4 iframe").attr(
+            "src",
+            $("#exampleModal4 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    function test() {
+        $.ajax({
+            url: '/Film/getTest',
+            type: "post",
+
+            success: function (data) {
+                console.log(data);
+
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        })
+    }
+</script>
+
+

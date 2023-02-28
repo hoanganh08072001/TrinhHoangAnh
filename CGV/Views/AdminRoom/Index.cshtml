@@ -1,0 +1,242 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/MyLayout/_LayoutAdmin.cshtml";
+}
+@model List<Model.room>
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Phòng chiếu</h1>
+       
+
+        <div class="card mb-4">
+            
+                @if (ViewBag.Msg != null)
+                {
+                    if (ViewBag.Msg == "1")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu đã tồn tại</strong>
+                        </div>
+                    }
+                    else if (ViewBag.Msg == "2")
+                    {
+                        <div class="alert alert-info">
+                            <strong>Thành công</strong>
+                        </div>
+                    }
+                    else if (ViewBag.Msg == "3")
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu đang hoạt động ở suất chiếu hoặc booking, không thể xóa</strong>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-danger">
+                            <strong>Dữ liệu không tồn tại</strong>
+                        </div>
+                    }
+                }
+        <div class="card-header" style="display:flex;justify-content:space-between">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalAdd" style="width: 100px !important">
+                Thêm
+            </button>
+            <a href="/admin/roomtrash">
+                <button type="button" class="btn btn-secondary">
+                    Thùng rác
+                </button>
+            </a>
+        </div>
+            
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                        <tr style="background-color : darkgray">
+                            <th>STT</th>
+                            <th>Tên phòng</th>
+                            <th>Số lượng</th>
+                            <th>Hoạt động</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr style="background-color : darkgray">
+                            <th>STT</th>
+                            <th>Tên phòng</th>
+                            <th>Số lượng</th>
+                            <th>Hoạt động</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @{var stt = 1; }
+                        @foreach (var item in Model)
+                        {
+                            var numberSeat = new DatabaseIO.RoomDao().numberSeat(item.id);
+                        <tr>
+                            <td>@stt</td>
+                            <td>@item.room_name</td>
+                            <td>@numberSeat</td>
+                            <td>
+                                @{
+                                    var idModel = "exampleModal" + item.id;
+                                }
+                                @{
+                                    var idModelDel = "exampleModalDel" + item.id;
+                                }
+                                <button style="width:100px" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#@idModel">
+                                    Sửa
+                                </button>
+                               
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#@idModelDel" style="width:100px" class="btn btn-danger"> Xóa</button>
+                               
+                                <div class="modal fade" id="@idModelDel" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Bạn chắc chắn muốn xóa ?</h5>
+                                                <button  type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                            </div>
+                                           
+                                            <div class="modal-body">
+                                                Phòng : @item.room_name
+                                                <form action="/AdminRoom/Delete"  method="post">
+                                                    <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                    <div class="modal-footer" style="margin-top: 20px">
+                                                        <button style="width:100px"type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">
+                                                            Đóng
+                                                        </button>
+                                                        <button style="width:100px" type="submit" class="btn btn-danger"> Xóa</button>
+
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+
+                            <!-- Modal Update-->
+                            <div class="modal fade" id="@idModel" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sửa</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form method="POST" action="/AdminRoom/Update" class="register-form" id="register-form">
+                                                <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                <div class="mb-3">
+                                                    <label for="category-film"
+                                                           class="col-form-label">Tên <span style="color:red">* </span>:</label>
+                                                    <input type="text" class="form-control" maxlength="10" id="category-film" name="roomname" value="@item.room_name" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    @{
+                                                        var numberSeat1 = new DatabaseIO.RoomDao().numberSeat(item.id);
+                                                    }
+                                                    <label for="category-film"
+                                                           class="col-form-label">Số lượng ghế <span style="color:red">* </span>:</label>
+                                                    <select required class="form-select" id="number_seat1" name="number_seat1" aria-label="Default select example">
+                                                        <option selected value="@numberSeat1">@numberSeat</option>
+                                                        <option value="10">10</option>
+                                                        <option value="15">15</option>
+                                                        <option value="20">20</option>
+                                                        <option value="25">25</option>
+                                                        <option value="30">30</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button style="width:100px" type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">
+                                                        Đóng
+                                                    </button>
+                                                    <button style="width:100px" type="submit" class="btn btn-primary">Lưu</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Update-->
+                                                            stt++;
+                                                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="modal fade" id="exampleModalAdd" tabindex="0"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="/AdminRoom/Add" class="register-form" id="register-form">
+                    <div class="mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Tên <span style="color:red">* </span>:</label>
+                        <input type="text" class="form-control" maxlength="10" autofocus id="nameRoom" name="roomname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category-film"
+                               class="col-form-label">Số lượng ghế <span style="color:red">* </span>:</label>
+                        <select required class="form-select" id="number_seat" name="number_seat" aria-label="Default select example">
+                            <option value="">Chọn số lượng</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                        </select>
+                       
+                    </div>
+                    <div class="modal-footer">
+                        <button style="width:100px" type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                            Đóng
+                        </button>
+                        <button onclick="check()" style="width:100px" type="submit" class="btn btn-primary">Lưu </button>
+                    </div>
+                </form>
+            </div>
+            <script>
+                function check() {
+                    var nameRoom = document.getElementById("nameRoom").value;
+                    var numberSeat = document.getElementById("number_seat").value;
+                    if (nameRoom == "") {
+                        document.getElementById("nameRoom").style.borderWidth = '1px';
+                        document.getElementById("nameRoom").style.borderColor = 'red';
+                    } else if (numberSeat == "") {
+                        document.getElementById("number_seat").style.borderWidth = '1px';
+                        document.getElementById("number_seat").style.borderColor = 'red';
+                        document.getElementById("nameRoom").style.borderWidth = '1px';
+                        document.getElementById("nameRoom").style.borderColor = '#D0C9C9';
+                    }else {
+                        document.getElementById("nameRoom").style.borderWidth = '1px';
+                        document.getElementById("nameRoom").style.borderColor = '#D0C9C9';
+                    }
+                }
+            </script>
+        </div>
+    </div>
+</div>
+

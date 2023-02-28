@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/MyLayout/_LayoutAdmin.cshtml";
+}
+@model List<Model.room>
+<main>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Danh sách thùng rác</h1>
+
+
+        <div class="card mb-4">
+            <div class="card-header">
+               
+            </div>
+            <div class="card-body">
+                <table id="datatablesSimple">
+                    <thead>
+                        <tr style="background-color : darkgray">
+                            <th>STT</th>
+                            <th>Tên phòng</th>
+                            <th>Số lượng</th>
+                            <th>Hoạt động</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr style="background-color : darkgray">
+                            <th>STT</th>
+                            <th>Tên phòng</th>
+                            <th>Số lượng</th>
+                            <th>Hoạt động</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @{var stt = 1; }
+                        @foreach (var item in Model)
+                        {
+                            var numberSeat = new DatabaseIO.RoomDao().numberSeat(item.id);
+                            <tr>
+                                <td>@stt</td>
+                                <td>@item.room_name</td>
+                                <td>@numberSeat</td>
+                                <td>
+                                   
+                                    @{
+                                        var idModelDel = "exampleModalDel" + item.id;
+                                    }
+                                   
+
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#@idModelDel" style="width:100px" class="btn btn-primary"> Khôi phục</button>
+
+                                    <div class="modal fade" id="@idModelDel" tabindex="-1"
+                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Bạn chắc chắn muốn khôi phục ?</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    Phòng : @item.room_name
+                                                    <form action="/AdminRoom/ChangeStatus" method="post">
+                                                        <input type="hidden" class="form-control" id="id" name="id" value="@item.id">
+                                                        <div class="modal-footer" style="margin-top: 20px">
+                                                            <button style="width:100px" type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">
+                                                                Đóng
+                                                            </button>
+                                                            <button style="width:100px" type="submit" class="btn btn-danger"> Khôi phục</button>
+
+                                                        </div>
+
+                                                    </form>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                           
+                            stt++;
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+

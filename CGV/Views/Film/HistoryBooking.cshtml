@@ -1,0 +1,75 @@
+﻿@model List<Model.HistoryBooking>
+@{
+    ViewBag.Title = "HistoryBooking";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+}
+
+<section class="sign-in">
+    <div class="container">
+       
+        <div class="signin-content" style="margin-top: 170px;">
+            <h1 class="showcase-heading">Lịch sử đặt vé</h1>
+            <table class="table table-hover">
+                <thead>
+                    <tr style="background-color : darkgray">
+                        <th scope="col">STT</th>
+                        <th scope="col">Phim</th>
+                        <th scope="col">Ngày chiếu</th>
+                        <th scope="col">Suất chiếu</th>
+                        <th scope="col">Phòng</th>
+                        <th scope="col">Ghế ngồi</th>
+                        <th scope="col">Giá tiền</th>
+                        <th scope="col">Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@item.id</th>
+
+                            <td>
+                                @item.nameFilm
+                            </td>
+                            <td>
+                                @item.schedulename
+                            </td>
+                            <td>
+                                @item.showtimeName
+                            </td>
+                            <td>
+                                @item.roomName
+                            </td>
+                            <td>
+                                @item.seatName
+                            </td>
+                            <td>65.000 VNĐ</td>
+                            <td>
+                                @if (@item.status == 1)
+                                {
+                                    <p>Đã thanh toán</p>
+
+                                }
+                                else
+                                {
+
+                                    <p>Chưa thanh toán</p>
+                                }
+
+                            </td>
+
+
+                        </tr>
+                    }
+
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+

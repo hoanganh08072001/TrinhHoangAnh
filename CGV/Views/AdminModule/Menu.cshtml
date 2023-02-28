@@ -1,0 +1,239 @@
+﻿@using Model;
+<div id="layoutSidenav_nav">
+    @{ usercgv user = (usercgv)Session["usr"]; string checkActive = (string)Session["checkactive"]; string checkActiveP = (string)Session["activeParent"];
+        string checkActivepost = (string)Session["checkactivepost"];
+}
+    <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                @if (checkActiveP == "home")
+                {
+                    <a class="nav-link active" href="/admin/home">
+                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        Bảng điều khiển
+                    </a>
+                }
+                else
+                {
+                    <a class="nav-link" href="/admin/home">
+                        <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        Bảng điều khiển
+                    </a>
+                }
+
+                @if (user.role_id == 1)
+                {
+
+                    <a class="nav-link collapsed parent" href="#" data-bs-toggle="collapse"
+                       data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                        Quản lý Phim
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+
+                    string name = "";
+                    if (checkActive != null)
+                    {
+                        name = "in show";
+                    }
+
+
+                    <div class="collapse @name" id="collapseLayouts" aria-labelledby="headingOne">
+
+                        <nav class="sb-sidenav-menu-nested nav ">
+                            @if (checkActive == "category_film")
+                            {
+
+
+                                <a class="nav-link active" href="/admin/loaiphim">Thể loại </a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" href="/admin/loaiphim">Thể loại </a>
+                            }
+                            @if (checkActive == "film")
+                            {
+
+
+                                <a class="nav-link active" href="/admin/film">Thông tin</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" href="/admin/film">Thông tin</a>
+                            }
+
+                            @if (checkActive == "schedule")
+                            {
+
+
+                                <a class="nav-link active" href="/admin/lichchieu">Lịch chiếu</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" href="/admin/lichchieu">Lịch chiếu</a>
+                            }
+                            @if (checkActive == "showtime")
+                            {
+
+
+                                <a class="nav-link active" href="/admin/suatchieu">Suất chiếu</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" href="/admin/suatchieu">Suất chiếu</a>
+                            }
+                            @if (checkActive == "room")
+                            {
+
+
+                                <a class="nav-link active" href="/admin/room">Phòng chiếu</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" href="/admin/room">Phòng chiếu</a>
+                            }
+                            @if (checkActive == "seat")
+                            {
+
+
+                                <a class="nav-link active" href="/admin/ghe">Ghế ngồi</a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" href="/admin/ghe">Ghế ngồi</a>
+                            }
+
+
+                        </nav>
+                    </div>
+                    string name1 = "";
+                    if (checkActivepost != null)
+                    {
+                        name1 = "in show";
+                    }
+
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                       aria-expanded="false" aria-controls="collapsePages">
+                        <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                        Bài viết
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse @name1" id="collapsePages" aria-labelledby="headingTwo"
+                         data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+
+                            @if (checkActivepost == "category_post")
+                            {
+                                <a class="nav-link active" href="/admin/loaibv">Thể loại </a>
+                            }
+                            else
+                            {
+                                <a class="nav-link" href="/admin/loaibv">Thể loại </a>
+                            }
+                            @if (checkActivepost == "post")
+                            {
+                                <a class="nav-link active" href="/admin/baiviet">Thông tin</a>
+                            }
+                            else
+                            {
+                        <a class="nav-link" href="/admin/baiviet">Thông tin</a>
+                            }
+                            
+                        </nav>
+                    </div>
+                    if (checkActiveP == "userAdmin")
+                    {
+
+
+                        <a class="nav-link active" href="/admin/user">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Người dùng
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="nav-link" href="/admin/user">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Người dùng
+                        </a>
+                    }
+
+                    if (checkActiveP == "booking")
+                    {
+                        <a class="nav-link active" href="/admin/booking">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Booking
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="nav-link" href="/admin/booking">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Booking
+                        </a>
+                    }
+                    if (checkActiveP == "bookingticket")
+                    {
+                        <a class="nav-link active" href="/admin/bookticket">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Đặt vé
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="nav-link" href="/admin/bookticket">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Đặt vé
+                        </a>
+                    }
+
+                }
+                else
+                {
+                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                       aria-expanded="false" aria-controls="collapsePages">
+                        <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                        Bài viết
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
+                         data-bs-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+
+                            <a class="nav-link" href="/admin/baiviet">Thông tin</a>
+                        </nav>
+                    </div>
+                    if (checkActiveP == "booking")
+                    {
+                        <a class="nav-link active" href="/admin/booking">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Booking
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="nav-link" href="/admin/booking">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Booking
+                        </a>
+                    }
+                    if (checkActiveP == "bookingticket")
+                    {
+                        <a class="nav-link active" href="/admin/bookticket">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Đặt vé
+                        </a>
+                    }
+                    else
+                    {
+                        <a class="nav-link" href="/admin/bookticket">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Đặt vé
+                        </a>
+                    }
+                }
+            </div>
+        </div>
+
+    </nav>
+</div>

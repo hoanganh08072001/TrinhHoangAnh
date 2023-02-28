@@ -1,0 +1,42 @@
+﻿
+<nav>
+    <!--logo--------------->
+    <a href="/Home/Film" class="logo">
+        <img src="/Content/Assets/images/logo.png" />
+    </a>
+    <!--menu--btn----------------->
+    <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon"></span>
+    </label>
+    <!--menu-------------->
+    @{ 
+        var userInfomatiom = (Model.usercgv)Session[CGV.Constants.Constants.USER_SESSION];
+        
+    }
+<ul class="menu">
+    <li>@Html.ActionLink("Giới Thiệu", "Promotion", "Post")</li>
+    <li>@Html.ActionLink("Phim", "Film", "Home")</li>
+    @if (userInfomatiom != null)
+    {
+        var profile = new DatabaseIO.UserDao().getInformation(userInfomatiom.email);
+        <li style="font-size:35px !important">@Html.ActionLink("Lịch sử đặt vé", "HistoryBooking", "Film")</li>
+        <li>@Html.ActionLink(profile.username, "ProfileUser", "Home", new { email = @userInfomatiom.email }, null)</li>
+        <li>@Html.ActionLink("Đăng Xuất", "Logout", "Authentication")</li>
+    }
+    else
+    {
+        <li>@Html.ActionLink("Đăng Nhập", "Login", "Authentication")</li>
+        <li>@Html.ActionLink("Đăng Kí", "Register", "Authentication")</li>
+    }
+
+</ul>
+    <!--search------------->
+    @using (Html.BeginForm("SearchFilm", "Film", FormMethod.Get))
+    {
+        <div class="search" style="width:350px">
+            <input type="text" name="keySearch" value="@ViewBag.keySearch" placeholder="Tìm kiếm phim mà bạn yêu thích" />
+            <i class="fas fa-search"></i>
+        </div>
+    }
+ 
+</nav>

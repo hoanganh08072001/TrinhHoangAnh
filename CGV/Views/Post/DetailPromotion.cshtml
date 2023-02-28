@@ -1,0 +1,28 @@
+﻿@model Model.post
+@{
+    ViewBag.Title = "DetailPromotion";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Assets/Event/table.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/Content/Assets/css/phim.css" />
+    <link rel="stylesheet" href="~/Content/Assets/css/lightslider.css" />
+    <script src="~/Content/Assets/js/JQuery3.3.1.js"></script>
+    <script src="~/Content/Assets/js/lightslider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+}
+
+<div>
+    <p class="head3">@Model.title </p>
+    <div class="event3">
+        <img class="image3" src="/Content/Assets/images/@Model.image" alt="" />
+       
+        <p class="cmt3"style="padding-left:15px">
+            @Html.Raw(@Model.description);
+
+        </p>
+    </div>
+</div>
+

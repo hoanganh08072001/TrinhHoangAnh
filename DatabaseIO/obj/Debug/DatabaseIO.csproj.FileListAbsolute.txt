@@ -1,0 +1,135 @@
+D:\Source Code\CGV\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\Source Code\CGV\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\Source Code\CGV\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\Source Code\CGV\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\Source Code\CGV\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Source Code\CGV\DatabaseIO\bin\Debug\Model.dll
+D:\Source Code\CGV\DatabaseIO\bin\Debug\Model.pdb
+D:\Source Code\CGV\DatabaseIO\bin\Debug\Model.dll.config
+D:\Source Code\CGV\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\Source Code\CGV\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Source Code\CGV\DatabaseIO\obj\Debug\DatabaseIO.csproj.AssemblyReference.cache
+D:\Source Code\CGV\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\Source Code\CGV\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\Source Code\CGV\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\Source Code\CGV\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\Model.pdb
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll.config
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\dđ\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\dđ\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.AssemblyReference.cache
+D:\dđ\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\dđ\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\dđ\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\dđ\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\Model.pdb
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll.config
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\.NET MVC\Github\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\Model.pdb
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll.config
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\dđ\New\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\dđ\New\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.AssemblyReference.cache
+D:\dđ\New\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\dđ\New\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\dđ\New\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\dđ\New\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\Model.pdb
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll.config
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\dđ\Final\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\dđ\Final\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.AssemblyReference.cache
+D:\dđ\Final\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\dđ\Final\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\dđ\Final\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\dđ\Final\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\Model.pdb
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\Model.dll.config
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\.NET MVC\FPT\cgvAspMVC\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\Model.dll
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\Model.pdb
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\Model.dll.config
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\.NET MVC\FPT\RapPhim\DatabaseIO\obj\Debug\DatabaseIO.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\DatabaseIO.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\DatabaseIO.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\Model.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\Model.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\Model.dll.config
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\Model.dll
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\Model.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\Model.dll.config
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.pdb

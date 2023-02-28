@@ -1,0 +1,982 @@
+D:\Source Code\CGV\CGV\bin\CGV.dll.config
+D:\Source Code\CGV\CGV\bin\CGV.dll
+D:\Source Code\CGV\CGV\bin\CGV.pdb
+D:\Source Code\CGV\CGV\bin\roslyn\csc.exe
+D:\Source Code\CGV\CGV\bin\roslyn\csc.exe.config
+D:\Source Code\CGV\CGV\bin\roslyn\csc.rsp
+D:\Source Code\CGV\CGV\bin\roslyn\csi.exe
+D:\Source Code\CGV\CGV\bin\roslyn\csi.exe.config
+D:\Source Code\CGV\CGV\bin\roslyn\csi.rsp
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Source Code\CGV\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.AppContext.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Console.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.IO.Compression.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Net.Http.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.ValueTuple.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\Source Code\CGV\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Source Code\CGV\CGV\bin\roslyn\vbc.exe
+D:\Source Code\CGV\CGV\bin\roslyn\vbc.exe.config
+D:\Source Code\CGV\CGV\bin\roslyn\vbc.rsp
+D:\Source Code\CGV\CGV\bin\roslyn\VBCSCompiler.exe
+D:\Source Code\CGV\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\Source Code\CGV\CGV\bin\Antlr3.Runtime.dll
+D:\Source Code\CGV\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Source Code\CGV\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\Source Code\CGV\CGV\bin\Newtonsoft.Json.dll
+D:\Source Code\CGV\CGV\bin\System.Web.Helpers.dll
+D:\Source Code\CGV\CGV\bin\System.Web.Mvc.dll
+D:\Source Code\CGV\CGV\bin\System.Web.Optimization.dll
+D:\Source Code\CGV\CGV\bin\System.Web.Razor.dll
+D:\Source Code\CGV\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\Source Code\CGV\CGV\bin\System.Web.WebPages.dll
+D:\Source Code\CGV\CGV\bin\System.Web.WebPages.Razor.dll
+D:\Source Code\CGV\CGV\bin\WebGrease.dll
+D:\Source Code\CGV\CGV\bin\System.Web.Helpers.xml
+D:\Source Code\CGV\CGV\bin\System.Web.Mvc.xml
+D:\Source Code\CGV\CGV\bin\System.Web.Optimization.xml
+D:\Source Code\CGV\CGV\bin\System.Web.Razor.xml
+D:\Source Code\CGV\CGV\bin\System.Web.WebPages.xml
+D:\Source Code\CGV\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\Source Code\CGV\CGV\bin\System.Web.WebPages.Razor.xml
+D:\Source Code\CGV\CGV\bin\Newtonsoft.Json.xml
+D:\Source Code\CGV\CGV\bin\Antlr3.Runtime.pdb
+D:\Source Code\CGV\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Source Code\CGV\CGV\obj\Debug\CGV.csproj.AssemblyReference.cache
+D:\Source Code\CGV\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\Source Code\CGV\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\Source Code\CGV\CGV\obj\Debug\CGV.dll
+D:\Source Code\CGV\CGV\obj\Debug\CGV.pdb
+D:\Source Code\CGV\CGV\bin\DatabaseIO.dll
+D:\Source Code\CGV\CGV\bin\EntityFramework.dll
+D:\Source Code\CGV\CGV\bin\EntityFramework.SqlServer.dll
+D:\Source Code\CGV\CGV\bin\Model.dll
+D:\Source Code\CGV\CGV\bin\DatabaseIO.pdb
+D:\Source Code\CGV\CGV\bin\DatabaseIO.dll.config
+D:\Source Code\CGV\CGV\bin\Model.pdb
+D:\Source Code\CGV\CGV\bin\Model.dll.config
+D:\Source Code\CGV\CGV\bin\EntityFramework.xml
+D:\Source Code\CGV\CGV\bin\EntityFramework.SqlServer.xml
+D:\dđ\cgvAspMVC\CGV\bin\CGV.dll.config
+D:\dđ\cgvAspMVC\CGV\bin\CGV.dll
+D:\dđ\cgvAspMVC\CGV\bin\CGV.pdb
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\csc.exe
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\csc.exe.config
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\csc.rsp
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\csi.exe
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\csi.exe.config
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\csi.rsp
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.AppContext.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Console.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Net.Http.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.ValueTuple.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\vbc.exe
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\vbc.exe.config
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\vbc.rsp
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe
+D:\dđ\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\dđ\cgvAspMVC\CGV\bin\Antlr3.Runtime.dll
+D:\dđ\cgvAspMVC\CGV\bin\DatabaseIO.dll
+D:\dđ\cgvAspMVC\CGV\bin\EntityFramework.dll
+D:\dđ\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.dll
+D:\dđ\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\dđ\cgvAspMVC\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\dđ\cgvAspMVC\CGV\bin\Model.dll
+D:\dđ\cgvAspMVC\CGV\bin\Newtonsoft.Json.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.Helpers.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.Mvc.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.Optimization.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.Razor.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.WebPages.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.dll
+D:\dđ\cgvAspMVC\CGV\bin\WebGrease.dll
+D:\dđ\cgvAspMVC\CGV\bin\DatabaseIO.pdb
+D:\dđ\cgvAspMVC\CGV\bin\DatabaseIO.dll.config
+D:\dđ\cgvAspMVC\CGV\bin\Model.pdb
+D:\dđ\cgvAspMVC\CGV\bin\Model.dll.config
+D:\dđ\cgvAspMVC\CGV\bin\EntityFramework.xml
+D:\dđ\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.Helpers.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.Mvc.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.Optimization.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.Razor.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.WebPages.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.xml
+D:\dđ\cgvAspMVC\CGV\bin\Newtonsoft.Json.xml
+D:\dđ\cgvAspMVC\CGV\bin\Antlr3.Runtime.pdb
+D:\dđ\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\dđ\cgvAspMVC\CGV\obj\Debug\CGV.csproj.AssemblyReference.cache
+D:\dđ\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\dđ\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\dđ\cgvAspMVC\CGV\obj\Debug\CGV.dll
+D:\dđ\cgvAspMVC\CGV\obj\Debug\CGV.pdb
+D:\dđ\cgvAspMVC\CGV\bin\QRCoder.dll
+D:\dđ\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\dđ\cgvAspMVC\CGV\bin\Stripe.net.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\dđ\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.dll
+D:\dđ\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\dđ\cgvAspMVC\CGV\bin\Stripe.net.pdb
+D:\dđ\cgvAspMVC\CGV\bin\Stripe.net.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\dđ\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\obj\Debug\CGV.csprojAssemblyReference.cache
+D:\.NET MVC\Github\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\.NET MVC\Github\cgvAspMVC\CGV\obj\Debug\CGV.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\obj\Debug\CGV.pdb
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\CGV.dll.config
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\CGV.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\CGV.pdb
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\csc.exe
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\csc.exe.config
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\csc.rsp
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\csi.exe
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\csi.exe.config
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\csi.rsp
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.AppContext.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Console.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Net.Http.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.ValueTuple.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\vbc.exe
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\vbc.exe.config
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\vbc.rsp
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Antlr3.Runtime.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\DatabaseIO.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\EntityFramework.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Model.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Newtonsoft.Json.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\QRCoder.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Stripe.net.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.Helpers.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.Mvc.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.Optimization.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.Razor.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.WebPages.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\WebGrease.dll
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\DatabaseIO.pdb
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\DatabaseIO.dll.config
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Model.pdb
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Model.dll.config
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\EntityFramework.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Stripe.net.pdb
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Stripe.net.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.Helpers.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.Mvc.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.Optimization.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.Razor.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.WebPages.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Newtonsoft.Json.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Antlr3.Runtime.pdb
+D:\.NET MVC\Github\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\.NET MVC\Github\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\dđ\New\cgvAspMVC\CGV\bin\CGV.dll.config
+D:\dđ\New\cgvAspMVC\CGV\bin\CGV.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\CGV.pdb
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\csc.exe
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\csc.exe.config
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\csc.rsp
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\csi.exe
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\csi.exe.config
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\csi.rsp
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.AppContext.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Console.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Net.Http.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.ValueTuple.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\vbc.exe
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\vbc.exe.config
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\vbc.rsp
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe
+D:\dđ\New\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\dđ\New\cgvAspMVC\CGV\bin\Antlr3.Runtime.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\DatabaseIO.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\EntityFramework.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\Model.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\Newtonsoft.Json.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\QRCoder.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\Stripe.net.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.Helpers.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.Mvc.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.Optimization.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.Razor.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.WebPages.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\WebGrease.dll
+D:\dđ\New\cgvAspMVC\CGV\bin\DatabaseIO.pdb
+D:\dđ\New\cgvAspMVC\CGV\bin\DatabaseIO.dll.config
+D:\dđ\New\cgvAspMVC\CGV\bin\Model.pdb
+D:\dđ\New\cgvAspMVC\CGV\bin\Model.dll.config
+D:\dđ\New\cgvAspMVC\CGV\bin\EntityFramework.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\Stripe.net.pdb
+D:\dđ\New\cgvAspMVC\CGV\bin\Stripe.net.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.Helpers.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.Mvc.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.Optimization.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.Razor.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.WebPages.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\Newtonsoft.Json.xml
+D:\dđ\New\cgvAspMVC\CGV\bin\Antlr3.Runtime.pdb
+D:\dđ\New\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\dđ\New\cgvAspMVC\CGV\obj\Debug\CGV.csproj.AssemblyReference.cache
+D:\dđ\New\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\dđ\New\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\dđ\New\cgvAspMVC\CGV\obj\Debug\CGV.dll
+D:\dđ\New\cgvAspMVC\CGV\obj\Debug\CGV.pdb
+D:\.NET MVC\cgvAspMVC\CGV\bin\CGV.dll.config
+D:\.NET MVC\cgvAspMVC\CGV\bin\CGV.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\CGV.pdb
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\csc.exe
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\csc.exe.config
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\csc.rsp
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\csi.exe
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\csi.exe.config
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\csi.rsp
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.AppContext.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Console.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Net.Http.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.ValueTuple.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\vbc.exe
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\vbc.exe.config
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\vbc.rsp
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe
+D:\.NET MVC\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\.NET MVC\cgvAspMVC\CGV\bin\Antlr3.Runtime.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\DatabaseIO.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\EntityFramework.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\Model.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\Newtonsoft.Json.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\QRCoder.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\Stripe.net.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.Helpers.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.Mvc.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.Optimization.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.Razor.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.WebPages.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\WebGrease.dll
+D:\.NET MVC\cgvAspMVC\CGV\bin\DatabaseIO.pdb
+D:\.NET MVC\cgvAspMVC\CGV\bin\DatabaseIO.dll.config
+D:\.NET MVC\cgvAspMVC\CGV\bin\Model.pdb
+D:\.NET MVC\cgvAspMVC\CGV\bin\Model.dll.config
+D:\.NET MVC\cgvAspMVC\CGV\bin\EntityFramework.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\Stripe.net.pdb
+D:\.NET MVC\cgvAspMVC\CGV\bin\Stripe.net.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.Helpers.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.Mvc.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.Optimization.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.Razor.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.WebPages.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\Newtonsoft.Json.xml
+D:\.NET MVC\cgvAspMVC\CGV\bin\Antlr3.Runtime.pdb
+D:\.NET MVC\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\.NET MVC\cgvAspMVC\CGV\obj\Debug\CGV.csprojAssemblyReference.cache
+D:\.NET MVC\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\.NET MVC\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\.NET MVC\cgvAspMVC\CGV\obj\Debug\CGV.dll
+D:\.NET MVC\cgvAspMVC\CGV\obj\Debug\CGV.pdb
+D:\dđ\Final\cgvAspMVC\CGV\bin\CGV.dll.config
+D:\dđ\Final\cgvAspMVC\CGV\bin\CGV.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\CGV.pdb
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\csc.exe
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\csc.exe.config
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\csc.rsp
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\csi.exe
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\csi.exe.config
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\csi.rsp
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.AppContext.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Console.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Net.Http.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.ValueTuple.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\vbc.exe
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\vbc.exe.config
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\vbc.rsp
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe
+D:\dđ\Final\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\dđ\Final\cgvAspMVC\CGV\bin\Antlr3.Runtime.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\DatabaseIO.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\EntityFramework.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\Model.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\Newtonsoft.Json.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\QRCoder.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\Stripe.net.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.Helpers.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.Mvc.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.Optimization.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.Razor.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.WebPages.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\WebGrease.dll
+D:\dđ\Final\cgvAspMVC\CGV\bin\DatabaseIO.pdb
+D:\dđ\Final\cgvAspMVC\CGV\bin\DatabaseIO.dll.config
+D:\dđ\Final\cgvAspMVC\CGV\bin\Model.pdb
+D:\dđ\Final\cgvAspMVC\CGV\bin\Model.dll.config
+D:\dđ\Final\cgvAspMVC\CGV\bin\EntityFramework.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\Stripe.net.pdb
+D:\dđ\Final\cgvAspMVC\CGV\bin\Stripe.net.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.Helpers.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.Mvc.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.Optimization.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.Razor.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.WebPages.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\Newtonsoft.Json.xml
+D:\dđ\Final\cgvAspMVC\CGV\bin\Antlr3.Runtime.pdb
+D:\dđ\Final\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\dđ\Final\cgvAspMVC\CGV\obj\Debug\CGV.csproj.AssemblyReference.cache
+D:\dđ\Final\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\dđ\Final\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\dđ\Final\cgvAspMVC\CGV\obj\Debug\CGV.dll
+D:\dđ\Final\cgvAspMVC\CGV\obj\Debug\CGV.pdb
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\CGV.dll.config
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\CGV.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\CGV.pdb
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\csc.exe
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\csc.exe.config
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\csc.rsp
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\csi.exe
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\csi.exe.config
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\csi.rsp
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.AppContext.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Console.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Net.Http.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.ValueTuple.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\vbc.exe
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\vbc.exe.config
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\vbc.rsp
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Antlr3.Runtime.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\DatabaseIO.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\EntityFramework.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Model.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Newtonsoft.Json.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\QRCoder.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Stripe.net.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.Helpers.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.Mvc.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.Optimization.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.Razor.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.WebPages.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\WebGrease.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\DatabaseIO.pdb
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\DatabaseIO.dll.config
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Model.pdb
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Model.dll.config
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\EntityFramework.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\EntityFramework.SqlServer.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Stripe.net.pdb
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Stripe.net.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Threading.Tasks.Extensions.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.Helpers.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.Mvc.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.Optimization.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.Razor.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.WebPages.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\System.Web.WebPages.Razor.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Newtonsoft.Json.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Antlr3.Runtime.pdb
+D:\.NET MVC\FPT\cgvAspMVC\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\.NET MVC\FPT\cgvAspMVC\CGV\obj\Debug\CGV.csprojAssemblyReference.cache
+D:\.NET MVC\FPT\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\.NET MVC\FPT\cgvAspMVC\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\.NET MVC\FPT\cgvAspMVC\CGV\obj\Debug\CGV.dll
+D:\.NET MVC\FPT\cgvAspMVC\CGV\obj\Debug\CGV.pdb
+D:\.NET MVC\FPT\RapPhim\CGV\bin\CGV.dll.config
+D:\.NET MVC\FPT\RapPhim\CGV\bin\CGV.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\CGV.pdb
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\csc.exe
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\csc.exe.config
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\csc.rsp
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\csi.exe
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\csi.exe.config
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\csi.rsp
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.AppContext.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Console.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.IO.Compression.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Net.Http.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.ValueTuple.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\vbc.exe
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\vbc.exe.config
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\vbc.rsp
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\VBCSCompiler.exe
+D:\.NET MVC\FPT\RapPhim\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Antlr3.Runtime.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\DatabaseIO.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\EntityFramework.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\EntityFramework.SqlServer.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Model.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Newtonsoft.Json.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\QRCoder.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Stripe.net.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.Helpers.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.Mvc.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.Optimization.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.Razor.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.WebPages.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.WebPages.Razor.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\WebGrease.dll
+D:\.NET MVC\FPT\RapPhim\CGV\bin\DatabaseIO.pdb
+D:\.NET MVC\FPT\RapPhim\CGV\bin\DatabaseIO.dll.config
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Model.pdb
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Model.dll.config
+D:\.NET MVC\FPT\RapPhim\CGV\bin\EntityFramework.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\EntityFramework.SqlServer.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Stripe.net.pdb
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Stripe.net.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Threading.Tasks.Extensions.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.Helpers.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.Mvc.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.Optimization.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.Razor.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.WebPages.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\System.Web.WebPages.Razor.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Newtonsoft.Json.xml
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Antlr3.Runtime.pdb
+D:\.NET MVC\FPT\RapPhim\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\.NET MVC\FPT\RapPhim\CGV\obj\Debug\CGV.csprojAssemblyReference.cache
+D:\.NET MVC\FPT\RapPhim\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\.NET MVC\FPT\RapPhim\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\.NET MVC\FPT\RapPhim\CGV\obj\Debug\CGV.dll
+D:\.NET MVC\FPT\RapPhim\CGV\obj\Debug\CGV.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\CGV.dll.config
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\CGV.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\CGV.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\csc.exe
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\csc.exe.config
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\csc.rsp
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\csi.exe
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\csi.exe.config
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\csi.rsp
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.AppContext.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Console.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.IO.Compression.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Net.Http.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.ValueTuple.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\vbc.exe
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\vbc.exe.config
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\vbc.rsp
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\VBCSCompiler.exe
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Antlr3.Runtime.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\DatabaseIO.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\EntityFramework.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Model.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Newtonsoft.Json.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\QRCoder.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Stripe.net.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.Helpers.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.Mvc.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.Optimization.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.Razor.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.WebPages.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.WebPages.Razor.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\WebGrease.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\DatabaseIO.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\DatabaseIO.dll.config
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Model.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Model.dll.config
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\EntityFramework.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Stripe.net.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Stripe.net.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.Helpers.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.Mvc.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.Optimization.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.Razor.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.WebPages.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\System.Web.WebPages.Razor.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Newtonsoft.Json.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Antlr3.Runtime.pdb
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\obj\Debug\CGV.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\obj\Debug\CGV.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\obj\Debug\CGV.dll
+C:\Users\ADMIN\Desktop\RapPhimMM\CGV\obj\Debug\CGV.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\CGV.dll.config
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\CGV.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\CGV.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\csc.exe
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\csc.exe.config
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\csc.rsp
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\csi.exe
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\csi.exe.config
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\csi.rsp
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.Managed.Core.targets
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.AppContext.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Collections.Immutable.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Console.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Globalization.Calendars.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.IO.Compression.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.IO.FileSystem.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Net.Http.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Net.Sockets.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Reflection.Metadata.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.ValueTuple.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Xml.XmlDocument.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Xml.XPath.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\vbc.exe
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\vbc.exe.config
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\vbc.rsp
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\VBCSCompiler.exe
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\roslyn\VBCSCompiler.exe.config
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Antlr3.Runtime.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\DatabaseIO.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\EntityFramework.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\EntityFramework.SqlServer.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Microsoft.Web.Infrastructure.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Model.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Newtonsoft.Json.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\QRCoder.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Stripe.net.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Threading.Tasks.Extensions.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.Helpers.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.Mvc.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.Optimization.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.Razor.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.WebPages.Deployment.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.WebPages.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.WebPages.Razor.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\WebGrease.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\DatabaseIO.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\DatabaseIO.dll.config
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Model.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Model.dll.config
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\EntityFramework.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\EntityFramework.SqlServer.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Stripe.net.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Stripe.net.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Threading.Tasks.Extensions.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.Helpers.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.Mvc.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.Optimization.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.Razor.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.WebPages.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.WebPages.Deployment.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\System.Web.WebPages.Razor.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Newtonsoft.Json.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Antlr3.Runtime.pdb
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\obj\Debug\CGV.csprojAssemblyReference.cache
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\obj\Debug\CGV.csproj.CoreCompileInputs.cache
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\obj\Debug\CGV.csproj.CopyComplete
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\obj\Debug\CGV.dll
+D:\.NET MVC\FPT\RapPhimMoMo\CGV\obj\Debug\CGV.pdb
+C:\Users\Admin\Desktop\RapPhimMM\CGV\bin\roslyn\gcsc.exe
+C:\Users\Admin\Desktop\RapPhimMM\CGV\bin\roslyn\gcsc.ico
