@@ -1,0 +1,270 @@
+﻿@model List<Model.film>
+@{
+    ViewBag.Title = "FilmByCategory";
+    Layout = "~/Views/MyLayout/_LayoutUser.cshtml";
+}
+
+<div class="movies-heading">
+    <h2>@ViewBag.CateFim</h2>
+
+</div>
+<section id="movies-list">
+
+    @foreach (var item in Model)
+    {
+        <div class="movies-box">
+            <!--img------------>
+            <a href="/film/detail/@item.id">
+                <div class="movies-img">
+                    <div class="quality">4K</div>
+                    <img src="/Content/Assets/images/@item.image" />
+                </div>
+            </a>
+            <div style="height : 70px;margin-top : -30px !important">
+                <a href="/film/detail/@item.id"> @item.film_name </a>
+            </div>
+            <!--text--------->
+            <!-- Button trigger modal -->
+            <div style="margin-bottom:20px" class="button--movie">
+                @{
+                    var idModel = "exampleModal" + item.id;
+                    var idModa = "exampleModa" + item.id;
+
+                }
+
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@idModel"
+                        style="margin-right: 20px">
+                    Trailer
+                </button>
+                <button type="button" onclick="getSchedule(@item.id)" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@idModa">Đặt Vé</button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="@idModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <iframe width="1104" height="621" src="@item.trailer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  Modak Booking -->
+        <div class="modal fade" id="@idModa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    @{
+                        var nameClose = "btn-close" + item.id;
+                    }
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">@item.film_name</h5>
+                        <button type="button" id="@nameClose" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+
+                                <label for="schedule" class="col-form-label">Lịch chiếu:</label>
+                                @{
+                                    var nameSchdule = "schedule" + item.id;
+                                    var nameShowtime = "showtime" + item.id;
+                                    var nameRoom = "room" + item.id;
+                                    var nameSeat = "seat" + item.id;
+                                    var nameError = "resultError" + item.id;
+
+                                }
+                                <select required class="form-select" onchange="getRoom(@item.id)" id="@nameSchdule" name="schedule" aria-label="Default select example">
+                                    <option value="0">Chọn lịch chiếu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="room" class="col-form-label">Phòng chiếu:</label>
+                                <select onchange="getShowtime(@item.id)" class="form-select" id="@nameRoom" name="room" aria-label="Default select example">
+                                    <option value="0">Chọn phòng</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="showtime" class="col-form-label">Suất chiếu:</label>
+                                <select class="form-select" onchange="getSeat(@item.id)" id="@nameShowtime" name="showtime" aria-label="Default select example">
+                                    <option value="0">Chọn suất chiếu</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label for="room" class="col-form-label">Vị trí ghế ngồi trong rạp:</label>
+                                <div style="align-content:center;align-items:center">
+                                    <div style="height:50px;line-height:50px; border: 1px solid; justify-content: center; display: flex; align-content: center; justify-items: center; margin-bottom: 40px; background-color: #d42304;color:#ffff">
+                                        <p style="font-weight:bold;font-size:20px">MÀN HÌNH</p>
+                                    </div>
+                                    <div id="@nameSeat" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                                        @foreach (var item1 in ViewBag.listseat)
+                                        {
+
+                                            <div id="" style="display: flex; align-content: center;  justify-content: center; justify-items: center; border: 1px solid black; line-height: 50px; height: 50px; width: 104.2px; margin-right: 6.4px; margin-bottom: 6.4px ;">
+                                                <p> 🪑 @item1.seat_name</p>
+
+                                            </div>
+
+                                        }
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="roomaa" class="col-form-label">Giá vé: 65.000 / vé</label>
+                            </div>
+                            <p style="color: red" id="@nameError"></p>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <button onclick="bookingTicket(@item.id)" type="button" class="btn btn-danger">Đặt vé</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModaltest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thông tin chi tiết</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="result" class="modal-body"></div>
+                    <div style="display:none" id="linkqr" class="modal-body"></div>
+                    <div style="margin-bottom:20px" id="id_qrcode"></div>
+                    <div style="display:none" id="sessionId" class="modal-body"></div>
+
+                    <div class="modal-footer">
+                        <a href="/Film/paymentAtCine" class="btn btn-danger">Thanh toán tại rạp </a>
+                        <button class="btn btn-danger" id="btnPay">Thanh toán online</button>
+
+                    </div>
+                </div>
+                <div>
+                    <span class="red">@Html.ValidationSummary(false)</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModaltest2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="result2" class="modal-body"></div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                        <a href="/Home/IndexUser" class="btn btn-danger" id="btnPay">Reload</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function onReady() {
+                var text = document.getElementById('linkqr').innerHTML;
+                var qrcode = new QRCode("id_qrcode", {
+                    text: text,
+                    width: 150,
+                    height: 150,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+        </script>
+
+        <script>
+            var stripe = Stripe("pk_test_51Itn76AY7zpl2tqohPq6YilgoGQtljYobrItYBaIvyrVXOjq5Lff6djQeMgBcLvRIGHvgrx9OwmC3ZZcHV6TepuG00KgREPMiI");
+
+            var element = document.getElementById('btnPay');
+            element.addEventListener('click', function () {
+                var text = document.getElementById('sessionId').innerHTML;
+                stripe.redirectToCheckout({
+                    sessionId: text
+                }).then(function (result) {
+                    console.log(result)
+                });
+            })
+
+        </script>
+    }
+</section>
+<script>
+    $(document).ready(function () {
+        $("#autoWidth,#autoWidth2").lightSlider({
+            autoWidth: true,
+            loop: true,
+            onSliderLoad: function () {
+                $("#autoWidth,#autoWidth2").removeClass("cS-hidden");
+            },
+        });
+    });
+</script>
+<!--btns--------------->
+<!-- <div class="btns">
+  <a href="#">Previous</a>
+  <a href="#">Next</a>
+</div> -->
+<!--stopplaying--------------->
+<script>
+    $("#exampleModal1").on("hidden.bs.modal", function (e) {
+        $("#exampleModal1 iframe").attr(
+            "src",
+            $("#exampleModal1 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal2").on("hidden.bs.modal", function (e) {
+        $("#exampleModal2 iframe").attr(
+            "src",
+            $("#exampleModal2 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal3").on("hidden.bs.modal", function (e) {
+        $("#exampleModal3 iframe").attr(
+            "src",
+            $("#exampleModal3 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    $("#exampleModal4").on("hidden.bs.modal", function (e) {
+        $("#exampleModal4 iframe").attr(
+            "src",
+            $("#exampleModal4 iframe").attr("src")
+        );
+    });
+</script>
+<script>
+    function test() {
+        $.ajax({
+            url: '/Film/getTest',
+            type: "post",
+
+            success: function (data) {
+                console.log(data);
+
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        })
+    }
+</script>
+

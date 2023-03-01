@@ -95,7 +95,10 @@ namespace CGV.Controllers.Admin
                         
                             sche.deleteScheduleRoom(idSchedule);
                             sche.addScheduleRoom(idSchedule, idR);
-                            sche.editRoomShowTime(idSchedule, idR);
+                            if (scheduleO.showtimes.Any())
+                            {
+                                sche.editRoomShowTime(idSchedule, idR);
+                            }
                             sche.update(filmid, datesche, id);
                             var message = "2";
                             return RedirectToAction("Index", new { mess = message });

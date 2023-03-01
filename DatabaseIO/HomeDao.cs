@@ -19,8 +19,8 @@ namespace DatabaseIO
         {
             try {
                 var today = DateTime.Now;
+                return mydb.films.Where(x => x.premiere_date > today).OrderBy(x => x.premiere_date).ToList();
                 //return mydb.Database.SqlQuery<film>("SELECT * FROM films WHERE CONVERT(varchar, premiere_date, 101) > CONVERT(varchar, getdate(), 101)").ToList();
-                return mydb.films.Where(x => x.premiere_date < today).ToList();
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
                 return null;
@@ -34,8 +34,12 @@ namespace DatabaseIO
         public List<film> getFilmNowShowing()
         {
             try {
+                var today = DateTime.Now;
+                var dueday = today.AddDays(7);
+                var idfilms = mydb.schedules.Where(x => x.dateschedule >= today && x.dateschedule <= dueday).Select(x => x.film_id).Distinct().ToList();
+                return mydb.films.Where(x => idfilms.Contains(x.id)).ToList();
                 /*return mydb.Database.SqlQuery<film>("SELECT * FROM films WHERE CONVERT(varchar, premiere_date, 101) <= CONVERT(varchar, getdate(), 101)").ToList();*/
-                return mydb.Database.SqlQuery<film>("SELECT * FROM films WHERE id in (Select film_id From schedules Where CONVERT(varchar, dateschedule, 101) = CONVERT(varchar, getdate(), 101) )").ToList();
+                // return mydb.Database.SqlQuery<film>("SELECT * FROM films WHERE id in (Select film_id From schedules Where CONVERT(varchar, dateschedule, 101) = CONVERT(varchar, getdate(), 101) )").ToList();
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
                 return null;
@@ -87,6 +91,8 @@ namespace DatabaseIO
         public List<film> getFilmNow()
         {
             try {
+                var today = DateTime.Now;
+                //return mydb.films.Where(x => x.premiere_date > today).ToList();
                 return mydb.Database.SqlQuery<film>("SELECT DISTINCT  a.* FROM films as a,schedules as b, showtimes as c WHERE b.film_id = a.id AND c.schedule_id = b.id AND FORMAT(b.dateschedule, 'dd/MM/yyyy' ) = FORMAT(getdate(), 'dd/MM/yyyy' ) and c.start_time >= convert(varchar(32),getdate(),108)").ToList();
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);

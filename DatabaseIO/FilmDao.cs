@@ -294,5 +294,19 @@ namespace DatabaseIO
             mydb.SaveChanges();
         }
 
+        public List<film> getByCategory(int id)
+        {
+            try
+            {
+                return mydb.films.Where(f => f.id_cfilm == id).ToList();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+
+        }
+
     }
 }

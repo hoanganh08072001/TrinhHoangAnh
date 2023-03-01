@@ -1,8 +1,63 @@
-﻿
+﻿<style>
+    /* Style The Dropdown Button */
+    .dropbtn {
+        height: 40px;
+        line-height: 43px;
+        margin: 0px;
+        padding: 0px 22px;
+        display: flex;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #D42304;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            /* Change color of dropdown links on hover */
+            .dropdown-content a:hover {
+                background-color: #f1f1f1
+            }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: #D42304;
+        color : white;
+    }
+</style>
 <nav>
     <!--logo--------------->
     <a href="/Home/Film" class="logo">
-        <img src="/Content/Assets/images/logo.png" />
+        <img src="/Content/Assets/images/logobk.png" />
     </a>
     <!--menu--btn----------------->
     <label class="menu-icon" for="menu-btn">
@@ -15,7 +70,18 @@
     }
 <ul class="menu">
     <li>@Html.ActionLink("Giới Thiệu", "Promotion", "Post")</li>
-    <li>@Html.ActionLink("Phim", "Film", "Home")</li>
+    @*<li>@Html.ActionLink("Phim", "Film", "Home")</li>*@
+<li>
+    <div class="dropdown">
+        <span class="dropbtn">Phim</span>
+        <div class="dropdown-content">
+            @foreach (var cate in ViewBag.Cate)
+            {
+                <a href="/Film/FilmByCategory/@cate.id"><span style="font-size : 85%">@cate.name</span></a>
+            }
+        </div>
+    </div>
+</li>
     @if (userInfomatiom != null)
     {
         var profile = new DatabaseIO.UserDao().getInformation(userInfomatiom.email);

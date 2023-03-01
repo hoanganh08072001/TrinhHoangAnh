@@ -141,7 +141,7 @@
                                         </button>
                                         <div class="modal fade" id="@idModelDel" tabindex="-1"
                                              aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog">
+                                            <div class="modal-dialog modal-lg">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <h5 class="modal-title" id="exampleModalLabel">Xác nhận thanh toán ?</h5>
@@ -152,7 +152,7 @@
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="">
-                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 90px">Khách hàng:</label>
+                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 130px">Khách hàng:</label>
                                                                     @foreach (var item1 in user)
                                                                     {
                                                                         if (item1.id == item.id_user)
@@ -169,7 +169,7 @@
                                                                     }
                                                                 </div>
                                                                 <div class="">
-                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 90px">Phim:</label>
+                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 130px">Phim:</label>
                                                                     @foreach (var item2 in film)
                                                                     {
                                                                         if (item2.id == item.film_id)
@@ -179,7 +179,7 @@
                                                                     }
                                                                 </div>
                                                                 <div class="">
-                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 90px">Lịch chiếu:</label>
+                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 130px">Lịch chiếu:</label>
                                                                     @foreach (var item3 in sche)
                                                                     {
                                                                         if (item3.id == item.schedule_id)
@@ -190,7 +190,7 @@
                                                                     }
                                                                 </div>
                                                                 <div class="">
-                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 90px">Suất chiếu:</label>
+                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 130px">Suất chiếu:</label>
                                                                     @foreach (var item4 in sh)
                                                                     {
                                                                         if (item4.id == item.showtime_id)
@@ -202,7 +202,7 @@
                                                             </div>
                                                             <div class="col-6 ">
                                                                 <div class="">
-                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 90px">Phòng:</label>
+                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 130px">Phòng:</label>
                                                                     @foreach (var item5 in room)
                                                                     {
                                                                         if (item5.id == item.room_id)
@@ -212,7 +212,7 @@
                                                                     }
                                                                 </div>
                                                                 <div class="">
-                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 90px">Ghế:</label>
+                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 130px">Ghế:</label>
                                                                     @foreach (var item6 in seat)
                                                                     {
                                                                         if (item6.id == item.seat_id)
@@ -222,8 +222,8 @@
                                                                     }
                                                                 </div>
                                                                 <div class="">
-                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 90px">Tiền vé:</label>
-                                                                    @item.amount $
+                                                                    <label for="category-film" class="col-form-label" style="font-weight:bold;width : 130px">Tiền vé:</label>
+                                                                    @item.amount VNĐ
                                                                 </div>
                                                             </div>
                                                         </div>

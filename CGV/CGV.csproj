@@ -955,6 +955,7 @@
     <Content Include="Views\Authentication\Verify.cshtml" />
     <Content Include="Views\Film\FilmComingSoon.cshtml" />
     <Content Include="Views\Film\FilmNowShowing.cshtml" />
+    <Content Include="Views\Film\FilmByCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

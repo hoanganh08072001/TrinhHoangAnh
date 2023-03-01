@@ -23,6 +23,7 @@ namespace CGV.Controllers
         CommentDao commentD = new CommentDao();
         MailUtils mailUtil = new MailUtils();
         PaymentStripe paymentOnline = new PaymentStripe();
+        CategoryFilmDao cateD = new CategoryFilmDao();
       
         public ActionResult Index()
         {
@@ -440,7 +441,7 @@ namespace CGV.Controllers
             }
             return View(list);
         }
-        
+
         public ActionResult FilmNowShowing()
         {
             HomeDao homeDao = new HomeDao();
@@ -449,6 +450,24 @@ namespace CGV.Controllers
             {
                 var listSeat = seatD.getAll();
                 ViewBag.listseat = listSeat;
+                return View(list);
+            }
+            else
+            {
+                ModelState.AddModelError(Constants.Constants.ERROR_SYSTEM, Constants.Constants.ERROR_SYTEM_DETAIL);
+            }
+            return View(list);
+        }
+
+        public ActionResult FilmByCategory(int id)
+        {
+            List<film> list = filmD.getByCategory(id).Distinct().ToList();
+            var name = cateD.getName(id).name;
+            if (list != null)
+            {
+                var listSeat = seatD.getAll();
+                ViewBag.listseat = listSeat;
+                ViewBag.CateFim = name;
                 return View(list);
             }
             else

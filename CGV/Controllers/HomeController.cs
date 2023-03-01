@@ -45,7 +45,7 @@ namespace CGV.Controllers
         public ActionResult FilmNowShowing()
         {
             HomeDao homeDao = new HomeDao();
-            List<film> list = homeDao.getFilmComingSoon().Distinct().Take(10).ToList();
+            List<film> list = homeDao.getFilmNowShowing().Distinct().Take(10).ToList();
             if (list != null) {
                 var listSeat = seatD.getAll();
                 ViewBag.listseat = listSeat;

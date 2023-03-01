@@ -51,29 +51,31 @@
             {
                 foreach (var item in Model)
                 {
-                    <div class="movies-box" style="width: 300px; display: flex; justify-content: space-between; align-items: center; flex-direction: column; box-shadow: 2px 2px 30px rgb(0 0 0 / 20%); margin: 20px; border-radius: 5px; overflow: hidden; border-top: 3px solid #292929;">
-                        <!--img------------>
-                        <a href="/film/detail/@item.id">
-                            <div class="movies-img">
+        <div class="movies-box" style="width: 182px; display: flex; justify-content: space-between; align-items: center; flex-direction: column; box-shadow: 2px 2px 30px rgb(0 0 0 / 20%); margin: 10px; border-radius: 5px; overflow: hidden; border-top: 3px solid #292929;">
+            <!--img------------>
+            <a href="/film/detail/@item.id">
+                <div class="movies-img">
 
-                                <img src="/Content/Assets/images/@item.image" style=" width: 300px; height: 400px; object-fit: cover;" />
-                            </div>
-                        </a>
+                    <img src="/Content/Assets/images/@item.image" style=" width: 182px; height: 255px; object-fit: cover;" />
+                </div>
+            </a>
+            <div style="height : 55px; text-align : center !important">
+                <strong> @item.film_name </strong>
+            </div>
+            <div style="margin-top : -5px;margin-bottom:20px" class="button--movie">
+                @{
+                    var idModel = "exampleModal" + item.id;
+                    var idModa = "exampleModa" + item.id;
 
-                        <div style="margin-top:20px;margin-bottom:20px" class="button--movie">
-                            @{
-                                var idModel = "exampleModal" + item.id;
-                                var idModa = "exampleModa" + item.id;
+                }
 
-                            }
-
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@idModel"
-                                    style="margin-right: 20px">
-                                Trailer
-                            </button>
-                            <button type="button" onclick="getSchedule(@item.id)" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@idModa">Đặt Vé</button>
-                        </div>
-                    </div>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@idModel"
+                        style="margin-right: 20px">
+                    Trailer
+                </button>
+                <button type="button" onclick="getSchedule(@item.id)" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#@idModa">Đặt Vé</button>
+            </div>
+        </div>
                     <!-- Modal -->
                     <div class="modal fade" id="@idModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">

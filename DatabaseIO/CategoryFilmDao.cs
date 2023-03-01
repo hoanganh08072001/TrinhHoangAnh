@@ -18,6 +18,11 @@ namespace DatabaseIO
         {
             return mydb.category_film.ToList();
         }
+
+        public category_film getName(int id)
+        {
+            return mydb.category_film.FirstOrDefault(x => x.id == id);
+        }
         public void add(string name)
         {
             //insert data into table category_film

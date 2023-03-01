@@ -133,3 +133,18 @@ D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileIn
 D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
 D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.dll
 D:\.NET MVC\FPT\RapPhimMoMo\DatabaseIO\obj\Debug\DatabaseIO.pdb
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\DatabaseIO.dll.config
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\DatabaseIO.dll
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\DatabaseIO.pdb
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\EntityFramework.dll
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\EntityFramework.SqlServer.dll
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\Model.dll
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\Model.pdb
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\Model.dll.config
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\EntityFramework.xml
+D:\.NET\RapPhimMM\DatabaseIO\bin\Debug\EntityFramework.SqlServer.xml
+D:\.NET\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.csprojAssemblyReference.cache
+D:\.NET\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.csproj.CoreCompileInputs.cache
+D:\.NET\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.csproj.CopyComplete
+D:\.NET\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.dll
+D:\.NET\RapPhimMM\DatabaseIO\obj\Debug\DatabaseIO.pdb

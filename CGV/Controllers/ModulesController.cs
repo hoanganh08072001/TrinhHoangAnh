@@ -1,10 +1,12 @@
-﻿using System.Web.Mvc;
+﻿using DatabaseIO;
+using System.Web.Mvc;
 
 namespace CGV.Controllers
 {
     
     public class ModulesController : Controller
     {
+        CategoryFilmDao cteD = new CategoryFilmDao();
         // GET: Modules
         public ActionResult Index()
         {
@@ -13,6 +15,7 @@ namespace CGV.Controllers
         [ChildActionOnly]
         public ActionResult Header()
         {
+            ViewBag.Cate = cteD.getAllCategoryFilm();
             return PartialView();
         }
         [ChildActionOnly]
