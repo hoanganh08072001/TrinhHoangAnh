@@ -62,7 +62,7 @@ namespace CGV.Controllers.Admin
                 bool enableSsl = bool.Parse(ConfigurationManager.AppSettings["EnabledSSL"].ToString());
                 MailMessage message = new MailMessage(new MailAddress(formEmailAddress, formEmailDisplayName), new MailAddress(item.email));
       
-                message.Subject = "Khuyến mãi từ Bach Khoa Cinema";
+                message.Subject = "Khuyến mãi từ HaUI Cinema";
                 message.IsBodyHtml = true;
                 message.Body = content;
 

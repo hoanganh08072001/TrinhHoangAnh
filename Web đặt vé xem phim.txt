@@ -1,0 +1,37 @@
+Người dùng :
+- Đăng ký
+- Khi đăng ký hệ thống sẽ gửi mail cho người dùng để xác thực tài khoản
+- Nhận được mail gồm mã OTP gồm các chữ số, dùng các chữ số nhận được để nhập vào xác thực
+- Đăng nhập
+- Đăng xuất
+- Xem danh sách phim
+- Xem thông tin phim
+- Xem tin khuyến mãi
+- Xem trailer
+- Xem lịch chiếu
+- Đặt vé xem phim (chọn phim, chọn lịch chiếu, chọn phòng rạp, chọn ghế)
+- Khi đặt vé xong hệ thống sẽ gửi qua mail người dùng 1 mã QR, người dùng có thể dùng mã này để khi đến rạp quét mã QR
+- Có thể thanh toán online khi đặt vé
+- Xem lịch sử đặt vé
+Quản trị viên : 
+- Đăng nhập
+- Đăng xuất
+- Xem thống kê tổng quát
+- Thống kê doanh thu
+- Quản lý phim (Thêm mới, sửa, xóa, chi tiết, sắp xếp, tìm kiếm, phân trang)
+- Quản lý thể loại phim (Thêm mới, sửa, xóa, chi tiết, sắp xếp, tìm kiếm, phân trang)
+- Quản lý tin khuyến mãi (Thêm mới, sửa, xóa, chi tiết, sắp xếp, tìm kiếm, phân trang)
+- Quản lý lịch chiếu (Thêm mới, sửa, xóa, chi tiết, sắp xếp, tìm kiếm, phân trang)
+- Quản lý phòng chiếu (Thêm mới, sửa, xóa, chi tiết, sắp xếp, tìm kiếm, phân trang)
+- Quản lý các đơn đặt vé (chi tiết, sắp xếp, tìm kiếm, phân trang)
+Nhân viên : 
+- Đăng nhập
+- Đăng xuất
+- Xem thống kê tổng quát
+- Thống kê doanh thu
+- Quản lý tin khuyến mãi (Thêm mới, sửa, xóa, chi tiết, sắp xếp, tìm kiếm, phân trang)
+- Quản lý lịch chiếu (Thêm mới, sửa, xóa, chi tiết, sắp xếp, tìm kiếm, phân trang)
+- Quản lý phòng chiếu (Thêm mới, sửa, xóa, chi tiết, sắp xếp, tìm kiếm, phân trang)
+- Quản lý các đơn đặt vé (chi tiết, sắp xếp, tìm kiếm, phân trang)
+
+
